@@ -1,21 +1,21 @@
 # README
 
-###概要
+### 概要
 ***
 購入した珈琲豆の味やその他の情報を管理できます。<br>
 好きな珈琲豆を組み合わせて自分だけのオリジナルブレンドを作るのに役立ちます。<br>
 他ユーザーがお気に入りしている珈琲豆の情報を見れるので、今まで飲んだことのない珈琲にチャレンジできます。
 
-###コンセプト
+### コンセプト
 ***
 珈琲豆の情報管理アプリ
 
-###バージョン
+### バージョン
 ***
 Ruby 2.6.1<br>
 Rails 5.2.3
 
-###機能一覧
+### 機能一覧
 ***
 -[ ] ログイン機能
 -[ ] ユーザー登録機能（deviseを使用)
@@ -42,26 +42,26 @@ Rails 5.2.3
     -[ ] 編集と削除は投稿者のみ実行可能
 -[ ] コメント機能にはAjaxを使用
 
-###カタログ設計
+### カタログ設計
 ***
 https://docs.google.com/spreadsheets/d/1E7y5Z1LIySGGrmhaTWlRDK5h_OZuT_FdoOCtZhVZuuw/edit#gid=1177389026
 
-###テーブル定義
+### テーブル定義
 ***
 https://docs.google.com/spreadsheets/d/17MM4I3yb0arznbqWMRCEV6bZ9r5BPIVPU4himnJEWgw/edit#gid=1224643633
 
-###ER図
+### ER図
 https://cacoo.com/diagrams/5lDeaHfITpyQhqw8/87635
 
-###画面遷移図
+### 画面遷移図
 ***
 https://cacoo.com/diagrams/paySif2Aqxq8uOUM/DCAEA
 
-###画面ワイヤーフレーム
+### 画面ワイヤーフレーム
 ***
 https://cacoo.com/diagrams/67hqHoqehKJMqTKj/8D9A8
 
-###使用予定Gem
+### 使用予定Gem
 * carrierwave
 * mini_magick
 * devise
