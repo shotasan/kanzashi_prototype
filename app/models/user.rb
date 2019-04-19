@@ -6,4 +6,6 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   validates :profile, length: { maximum: 1000 }
+
+  mount_uploader :icon, IconUploader
 end
