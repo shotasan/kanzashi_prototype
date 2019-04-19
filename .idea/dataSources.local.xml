@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails kanzashi: test" uuid="471b4de9-eef6-45e5-b8a4-83529cdfcf11">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+    </data-source>
+    <data-source name="Rails kanzashi: development" uuid="8ced4132-67d0-4d18-9034-d6fbdd9a5e7c">
+      <database-info product="PostgreSQL" version="11.2" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="11.2" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <introspection-schemas>@:@</introspection-schemas>
+    </data-source>
+    <data-source name="Rails kanzashi: production" uuid="2fda88c2-dedb-4f6a-a8b4-9f509187cacd">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>kanzashi</user-name>
+    </data-source>
+  </component>
+</project>
