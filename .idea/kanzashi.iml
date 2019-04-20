@@ -364,6 +364,33 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="bullet (vbundled(5.9.0)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="3" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/perf" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/rails" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/tasks" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/perf" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/rails" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/tasks" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/perf" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/spec" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/rails" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/bullet-5.9.0/tasks" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="byebug (vbundled(11.0.1)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="3" />
@@ -1952,6 +1979,24 @@
         </SOURCES>
         <excluded>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/unicode-display_width-1.5.0/data" />
+        </excluded>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="uniform_notifier (vbundled(1.12.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="3" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/uniform_notifier-1.12.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/uniform_notifier-1.12.1/spec" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/uniform_notifier-1.12.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/uniform_notifier-1.12.1/spec" />
+        </SOURCES>
+        <excluded>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.6.0/gems/uniform_notifier-1.12.1/spec" />
         </excluded>
       </library>
     </orderEntry>
