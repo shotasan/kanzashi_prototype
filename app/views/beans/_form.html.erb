@@ -1,0 +1,67 @@
+<%= form_with(model: bean, locale: true) do |form| %>
+  <% if bean.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize bean.errors.count, "error" %> prohibited this bean from being saved:</h2>
+
+      <ul>
+        <% bean.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :plantation %>
+    <%= form.text_field :plantation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :roasted %>
+    <%= form.text_field :roasted %>
+  </div>
+
+  <div class="field">
+    <%= form.label :grind %>
+    <%= form.text_field :grind %>
+  </div>
+
+  <div class="field">
+    <%= form.label :store %>
+    <%= form.text_field :store %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :purchase_date %>
+    <%= form.date_field :purchase_date, value: Date.today %>
+  </div>
+
+  <div class="field">
+    <%= form.label :icon %>
+    <%= form.file_field :icon %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
