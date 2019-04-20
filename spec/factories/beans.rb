@@ -10,5 +10,6 @@ FactoryBot.define do
     price { 1 }
     purchase_date { "2019-04-20" }
     description { "MyText" }
+    user
   end
 end

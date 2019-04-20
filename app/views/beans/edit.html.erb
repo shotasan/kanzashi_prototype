@@ -1,2 +1,6 @@
-<h1>Beans#edit</h1>
-<p>Find me in app/views/beans/edit.html.erb</p>
+<h1>Editing Bean</h1>
+
+<%= render 'form', bean: @bean %>
+
+<%= link_to 'Show', @bean %> |
+<%= link_to 'Back', beans_path %>

@@ -1,4 +1,4 @@
-<%= form_with(model: bean, locale: true) do |form| %>
+<%= form_with(model: bean, local: true) do |form| %>
   <% if bean.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize bean.errors.count, "error" %> prohibited this bean from being saved:</h2>

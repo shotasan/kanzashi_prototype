@@ -2,9 +2,22 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
 
+  <div class="user-text">
+    <p><strong>投稿者</strong>：<%= @bean.user.name %></p>
+    <p><strong>画像</strong>：<%= image_tag @bean.user.icon.url %></p>
+  </div>
+
   <div class="bean-text">
     <p><strong>タイトル</strong>：<%= @bean.name %></p>
     <p><strong>画像</strong>：<%= image_tag @bean.icon.url %></p>
-    <p><strong>内容</strong>：<%= @bean.description %></p>
+    <p><strong>国</strong>：<%= @bean.country %></p>
+    <p><strong>煎り方</strong>：<%= @bean.roasted %></p>
+    <p><strong>挽き方</strong>：<%= @bean.grind %></p>
+    <p><strong>購入店</strong>：<%= @bean.store %></p>
+    <p><strong>値段</strong>：<%= @bean.price %></p>
+    <p><strong>購入日</strong>：<%= @bean.purchase_date %></p>
+    <p><strong>説明</strong>：<%= @bean.description %></p>
   </div>
+
+  <%= link_to '編集', edit_bean_path(@bean) %>
 </div>
