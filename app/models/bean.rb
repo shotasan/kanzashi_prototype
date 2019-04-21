@@ -1,5 +1,6 @@
 class Bean < ApplicationRecord
   belongs_to :user
+  has_one :taste, as: :tasteable
 
   validates :name, presence: true, length: { maximum: 30 }
   validates :country, length: { maximum: 30 }
