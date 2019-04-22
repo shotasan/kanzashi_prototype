@@ -23,7 +23,6 @@ class BeansController < ApplicationController
 
   def show
     @favorites = current_user.favorite_beans.find_by(bean_id: @bean)
-    binding
   end
 
   def update
