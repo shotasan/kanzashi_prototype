@@ -19,5 +19,14 @@
     <p><strong>説明</strong>：<%= @bean.description %></p>
   </div>
 
+  <div class="taste-text">
+    <p><strong>感想</strong>：<%= @bean.taste.impression %></p>
+    <p><strong>苦味</strong>：<%= @bean.taste.bitter %></p>
+    <p><strong>酸味</strong>：<%= @bean.taste.acidity %></p>
+    <p><strong>コク</strong>：<%= @bean.taste.rich %></p>
+    <p><strong>甘み</strong>：<%= @bean.taste.sweet %></p>
+    <p><strong>香り</strong>：<%= @bean.taste.aroma %></p>
+  </div>
+
   <%= link_to '編集', edit_bean_path(@bean) %>
 </div>

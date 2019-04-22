@@ -98,15 +98,17 @@
       <ObjectId>30155</ObjectId>
       <StateNumber>36408</StateNumber>
       <Owner>shota</Owner>
-      <IntrospectionStateNumber>36419</IntrospectionStateNumber>
+      <IntrospectionStateNumber>38177</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
       <Relations>sequence|table|30191|30193|1
+sequence|table|30312|30314|1
+sequence|table|30464|30466|1
 </Relations>
     </database>
     <database id="21" parent="1" name="kanzashi_test">
-      <ObjectId>30156</ObjectId>
-      <StateNumber>36409</StateNumber>
+      <ObjectId>30338</ObjectId>
+      <StateNumber>36454</StateNumber>
       <Owner>shota</Owner>
     </database>
     <database id="22" parent="1" name="keijiban_development">
@@ -129,128 +131,138 @@
       <StateNumber>736</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="26" parent="1" name="postgres">
+    <database id="26" parent="1" name="porimofic_test_development">
+      <ObjectId>30399</ObjectId>
+      <StateNumber>38148</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="27" parent="1" name="porimofic_test_test">
+      <ObjectId>30400</ObjectId>
+      <StateNumber>38149</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="28" parent="1" name="postgres">
       <ObjectId>13364</ObjectId>
       <Comment>default administrative connection database</Comment>
       <StateNumber>566</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="27" parent="1" name="rails-helloworld_development">
+    <database id="29" parent="1" name="rails-helloworld_development">
       <ObjectId>28901</ObjectId>
       <StateNumber>34752</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="28" parent="1" name="rails-helloworld_test">
+    <database id="30" parent="1" name="rails-helloworld_test">
       <ObjectId>28902</ObjectId>
       <StateNumber>34753</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="29" parent="1" name="session_login_development">
+    <database id="31" parent="1" name="session_login_development">
       <ObjectId>16482</ObjectId>
       <StateNumber>674</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="30" parent="1" name="session_login_test">
+    <database id="32" parent="1" name="session_login_test">
       <ObjectId>16483</ObjectId>
       <StateNumber>675</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="31" parent="1" name="task_management_app_development">
+    <database id="33" parent="1" name="task_management_app_development">
       <ObjectId>16885</ObjectId>
       <StateNumber>1288</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="32" parent="1" name="task_management_app_test">
+    <database id="34" parent="1" name="task_management_app_test">
       <ObjectId>29655</ObjectId>
       <StateNumber>35685</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="33" parent="1" name="taskleaf_development">
+    <database id="35" parent="1" name="taskleaf_development">
       <ObjectId>29743</ObjectId>
       <StateNumber>35852</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="34" parent="1" name="taskleaf_production">
+    <database id="36" parent="1" name="taskleaf_production">
       <ObjectId>29996</ObjectId>
       <StateNumber>36365</StateNumber>
       <Owner>taskleaf</Owner>
     </database>
-    <database id="35" parent="1" name="taskleaf_test">
+    <database id="37" parent="1" name="taskleaf_test">
       <ObjectId>29953</ObjectId>
       <StateNumber>35905</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="36" parent="1" name="webTech_test_development">
+    <database id="38" parent="1" name="webTech_test_development">
       <ObjectId>28972</ObjectId>
       <StateNumber>34769</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="37" parent="1" name="webTech_test_test">
+    <database id="39" parent="1" name="webTech_test_test">
       <ObjectId>28973</ObjectId>
       <StateNumber>34770</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="38" parent="1" name="web_technology_development">
+    <database id="40" parent="1" name="web_technology_development">
       <ObjectId>28903</ObjectId>
       <StateNumber>34754</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="39" parent="1" name="web_technology_practice_development">
+    <database id="41" parent="1" name="web_technology_practice_development">
       <ObjectId>28932</ObjectId>
       <StateNumber>34761</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="40" parent="1" name="web_technology_practice_test">
+    <database id="42" parent="1" name="web_technology_practice_test">
       <ObjectId>28933</ObjectId>
       <StateNumber>34762</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <database id="41" parent="1" name="web_technology_test">
+    <database id="43" parent="1" name="web_technology_test">
       <ObjectId>28904</ObjectId>
       <StateNumber>34755</StateNumber>
       <Owner>shota</Owner>
     </database>
-    <role id="42" parent="1" name="pg_execute_server_program">
+    <role id="44" parent="1" name="pg_execute_server_program">
       <ObjectId>4571</ObjectId>
       <Inherit>1</Inherit>
       <ConnectionLimit>-1</ConnectionLimit>
     </role>
-    <role id="43" parent="1" name="pg_monitor">
+    <role id="45" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
       <Inherit>1</Inherit>
       <ConnectionLimit>-1</ConnectionLimit>
     </role>
-    <role id="44" parent="1" name="pg_read_all_settings">
+    <role id="46" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
       <Inherit>1</Inherit>
       <ConnectionLimit>-1</ConnectionLimit>
     </role>
-    <role id="45" parent="1" name="pg_read_all_stats">
+    <role id="47" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
       <Inherit>1</Inherit>
       <ConnectionLimit>-1</ConnectionLimit>
     </role>
-    <role id="46" parent="1" name="pg_read_server_files">
+    <role id="48" parent="1" name="pg_read_server_files">
       <ObjectId>4569</ObjectId>
       <Inherit>1</Inherit>
       <ConnectionLimit>-1</ConnectionLimit>
     </role>
-    <role id="47" parent="1" name="pg_signal_backend">
+    <role id="49" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
       <Inherit>1</Inherit>
       <ConnectionLimit>-1</ConnectionLimit>
     </role>
-    <role id="48" parent="1" name="pg_stat_scan_tables">
+    <role id="50" parent="1" name="pg_stat_scan_tables">
       <ObjectId>3377</ObjectId>
       <Inherit>1</Inherit>
       <ConnectionLimit>-1</ConnectionLimit>
     </role>
-    <role id="49" parent="1" name="pg_write_server_files">
+    <role id="51" parent="1" name="pg_write_server_files">
       <ObjectId>4570</ObjectId>
       <Inherit>1</Inherit>
       <ConnectionLimit>-1</ConnectionLimit>
     </role>
-    <role id="50" parent="1" name="shota">
+    <role id="52" parent="1" name="shota">
       <ObjectId>10</ObjectId>
       <SuperRole>1</SuperRole>
       <Inherit>1</Inherit>
@@ -261,50 +273,50 @@
       <ConnectionLimit>-1</ConnectionLimit>
       <BypassRls>1</BypassRls>
     </role>
-    <role id="51" parent="1" name="taskleaf">
+    <role id="53" parent="1" name="taskleaf">
       <ObjectId>29995</ObjectId>
       <Inherit>1</Inherit>
       <CreateDb>1</CreateDb>
       <CanLogin>1</CanLogin>
       <ConnectionLimit>-1</ConnectionLimit>
     </role>
-    <schema id="52" parent="20" name="information_schema">
+    <schema id="54" parent="20" name="information_schema">
       <ObjectId>13068</ObjectId>
       <StateNumber>365</StateNumber>
       <Owner>shota</Owner>
     </schema>
-    <schema id="53" parent="20" name="pg_catalog">
+    <schema id="55" parent="20" name="pg_catalog">
       <ObjectId>11</ObjectId>
       <Comment>system catalog schema</Comment>
       <StateNumber>358</StateNumber>
       <Owner>shota</Owner>
     </schema>
-    <schema id="54" parent="20" name="pg_temp_1">
+    <schema id="56" parent="20" name="pg_temp_1">
       <ObjectId>11804</ObjectId>
       <StateNumber>120</StateNumber>
       <Owner>shota</Owner>
     </schema>
-    <schema id="55" parent="20" name="pg_toast">
+    <schema id="57" parent="20" name="pg_toast">
       <ObjectId>99</ObjectId>
       <Comment>reserved schema for TOAST tables</Comment>
       <StateNumber>1</StateNumber>
       <Owner>shota</Owner>
     </schema>
-    <schema id="56" parent="20" name="pg_toast_temp_1">
+    <schema id="58" parent="20" name="pg_toast_temp_1">
       <ObjectId>11805</ObjectId>
       <StateNumber>120</StateNumber>
       <Owner>shota</Owner>
     </schema>
-    <schema id="57" parent="20" name="public">
+    <schema id="59" parent="20" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <StateNumber>359</StateNumber>
       <Owner>shota</Owner>
-      <IntrospectionStateNumber>36420</IntrospectionStateNumber>
+      <IntrospectionStateNumber>38178</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
-    <access-method id="58" parent="20" name="btree">
+    <access-method id="60" parent="20" name="btree">
       <ObjectId>403</ObjectId>
       <Comment>b-tree index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -312,7 +324,7 @@
       <HandlerId>330</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="59" parent="20" name="hash">
+    <access-method id="61" parent="20" name="hash">
       <ObjectId>405</ObjectId>
       <Comment>hash index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -320,7 +332,7 @@
       <HandlerId>331</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="60" parent="20" name="gist">
+    <access-method id="62" parent="20" name="gist">
       <ObjectId>783</ObjectId>
       <Comment>GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -328,7 +340,7 @@
       <HandlerId>332</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="61" parent="20" name="gin">
+    <access-method id="63" parent="20" name="gin">
       <ObjectId>2742</ObjectId>
       <Comment>GIN index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -336,7 +348,7 @@
       <HandlerId>333</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="62" parent="20" name="spgist">
+    <access-method id="64" parent="20" name="spgist">
       <ObjectId>4000</ObjectId>
       <Comment>SP-GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -344,7 +356,7 @@
       <HandlerId>334</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="63" parent="20" name="brin">
+    <access-method id="65" parent="20" name="brin">
       <ObjectId>3580</ObjectId>
       <Comment>block range index (BRIN) access method</Comment>
       <StateNumber>1</StateNumber>
@@ -352,7 +364,7 @@
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
-    <extension id="64" parent="20" name="plpgsql">
+    <extension id="66" parent="20" name="plpgsql">
       <ObjectId>13350</ObjectId>
       <Comment>PL/pgSQL procedural language</Comment>
       <StateNumber>518</StateNumber>
@@ -360,7 +372,23 @@
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
-    <sequence id="65" parent="57" name="users_id_seq">
+    <sequence id="67" parent="59" name="beans_id_seq">
+      <ObjectId>30312</ObjectId>
+      <Owner>shota</Owner>
+      <StateNumber>36439</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="68" parent="59" name="tastes_id_seq">
+      <ObjectId>30464</ObjectId>
+      <Owner>shota</Owner>
+      <StateNumber>38169</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="69" parent="59" name="users_id_seq">
       <ObjectId>30191</ObjectId>
       <Owner>shota</Owner>
       <StateNumber>36415</StateNumber>
@@ -368,82 +396,323 @@
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <table id="66" parent="57" name="ar_internal_metadata">
+    <table id="70" parent="59" name="ar_internal_metadata">
       <ObjectId>30165</ObjectId>
       <Owner>shota</Owner>
       <StateNumber>36411</StateNumber>
     </table>
-    <table id="67" parent="57" name="schema_migrations">
+    <table id="71" parent="59" name="beans">
+      <ObjectId>30314</ObjectId>
+      <Owner>shota</Owner>
+      <StateNumber>36439</StateNumber>
+    </table>
+    <table id="72" parent="59" name="schema_migrations">
       <ObjectId>30157</ObjectId>
       <Owner>shota</Owner>
       <StateNumber>36410</StateNumber>
     </table>
-    <table id="68" parent="57" name="users">
+    <table id="73" parent="59" name="tastes">
+      <ObjectId>30466</ObjectId>
+      <Owner>shota</Owner>
+      <StateNumber>38169</StateNumber>
+    </table>
+    <table id="74" parent="59" name="users">
       <ObjectId>30193</ObjectId>
       <Owner>shota</Owner>
-      <StateNumber>36415</StateNumber>
+      <StateNumber>36429</StateNumber>
     </table>
-    <column id="69" parent="66" name="key">
+    <column id="75" parent="70" name="key">
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>36411</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="70" parent="66" name="value">
+    <column id="76" parent="70" name="value">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <StateNumber>36411</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="71" parent="66" name="created_at">
+    <column id="77" parent="70" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>36411</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="72" parent="66" name="updated_at">
+    <column id="78" parent="70" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>36411</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="73" parent="66" name="ar_internal_metadata_pkey">
+    <index id="79" parent="70" name="ar_internal_metadata_pkey">
       <ObjectId>30171</ObjectId>
       <StateNumber>36411</StateNumber>
       <ColNames>key</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="74" parent="66" name="ar_internal_metadata_pkey">
+    <key id="80" parent="70" name="ar_internal_metadata_pkey">
       <ObjectId>30172</ObjectId>
       <StateNumber>36411</StateNumber>
       <ColNames>key</ColNames>
       <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="75" parent="67" name="version">
+    <column id="81" parent="71" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <DefaultExpression>nextval(&apos;beans_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="82" parent="71" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="83" parent="71" name="country">
+      <Position>3</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="84" parent="71" name="plantation">
+      <Position>4</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="85" parent="71" name="roasted">
+      <Position>5</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="86" parent="71" name="grind">
+      <Position>6</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="87" parent="71" name="icon">
+      <Position>7</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="88" parent="71" name="store">
+      <Position>8</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="89" parent="71" name="price">
+      <Position>9</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <DefaultExpression>0</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="90" parent="71" name="purchase_date">
+      <Position>10</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="91" parent="71" name="description">
+      <Position>11</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <DefaultExpression>&apos;&apos;::text</DefaultExpression>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="92" parent="71" name="user_id">
+      <Position>12</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>36439</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="93" parent="71" name="created_at">
+      <Position>13</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="94" parent="71" name="updated_at">
+      <Position>14</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>36439</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="95" parent="71" name="beans_pkey">
+      <ObjectId>30330</ObjectId>
+      <StateNumber>36439</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="96" parent="71" name="index_beans_on_user_id">
+      <ObjectId>30337</ObjectId>
+      <StateNumber>36439</StateNumber>
+      <ColNames>user_id</ColNames>
+    </index>
+    <key id="97" parent="71" name="beans_pkey">
+      <ObjectId>30331</ObjectId>
+      <StateNumber>36439</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>beans_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="98" parent="71" name="fk_rails_e992c943a2">
+      <ObjectId>30332</ObjectId>
+      <StateNumber>36439</StateNumber>
+      <ColNames>user_id</ColNames>
+      <RefTableId>30193</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="99" parent="72" name="version">
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>36410</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="76" parent="67" name="schema_migrations_pkey">
+    <index id="100" parent="72" name="schema_migrations_pkey">
       <ObjectId>30163</ObjectId>
       <StateNumber>36410</StateNumber>
       <ColNames>version</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="77" parent="67" name="schema_migrations_pkey">
+    <key id="101" parent="72" name="schema_migrations_pkey">
       <ObjectId>30164</ObjectId>
       <StateNumber>36410</StateNumber>
       <ColNames>version</ColNames>
       <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="78" parent="68" name="id">
+    <column id="102" parent="73" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>38169</StateNumber>
+      <DefaultExpression>nextval(&apos;tastes_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="103" parent="73" name="impression">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>38169</StateNumber>
+      <DefaultExpression>&apos;&apos;::text</DefaultExpression>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="104" parent="73" name="bitter">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>38169</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="105" parent="73" name="acidity">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>38169</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="106" parent="73" name="rich">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>38169</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="107" parent="73" name="sweet">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>38169</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="108" parent="73" name="aroma">
+      <Position>7</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>38169</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="109" parent="73" name="tasteable_type">
+      <Position>8</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>38169</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="110" parent="73" name="tasteable_id">
+      <Position>9</Position>
+      <DataType>bigint|0s</DataType>
+      <StateNumber>38169</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="111" parent="73" name="created_at">
+      <Position>10</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>38169</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="112" parent="73" name="updated_at">
+      <Position>11</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>38169</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="113" parent="73" name="tastes_pkey">
+      <ObjectId>30474</ObjectId>
+      <StateNumber>38169</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="114" parent="73" name="index_tastes_on_tasteable_type_and_tasteable_id">
+      <ObjectId>30476</ObjectId>
+      <StateNumber>38169</StateNumber>
+      <ColNames>tasteable_type
+tasteable_id</ColNames>
+    </index>
+    <key id="115" parent="73" name="tastes_pkey">
+      <ObjectId>30475</ObjectId>
+      <StateNumber>38169</StateNumber>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>tastes_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="116" parent="74" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -451,7 +720,7 @@
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="79" parent="68" name="name">
+    <column id="117" parent="74" name="name">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
@@ -459,14 +728,14 @@
       <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
       <TypeId>1043</TypeId>
     </column>
-    <column id="80" parent="68" name="profile">
+    <column id="118" parent="74" name="profile">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <StateNumber>36415</StateNumber>
       <DefaultExpression>&apos;&apos;::text</DefaultExpression>
       <TypeId>25</TypeId>
     </column>
-    <column id="81" parent="68" name="icon">
+    <column id="119" parent="74" name="icon">
       <Position>4</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
@@ -474,7 +743,7 @@
       <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
       <TypeId>1043</TypeId>
     </column>
-    <column id="82" parent="68" name="email">
+    <column id="120" parent="74" name="email">
       <Position>5</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
@@ -482,7 +751,7 @@
       <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
       <TypeId>1043</TypeId>
     </column>
-    <column id="83" parent="68" name="encrypted_password">
+    <column id="121" parent="74" name="encrypted_password">
       <Position>6</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
@@ -490,57 +759,57 @@
       <DefaultExpression>&apos;&apos;::character varying</DefaultExpression>
       <TypeId>1043</TypeId>
     </column>
-    <column id="84" parent="68" name="reset_password_token">
+    <column id="122" parent="74" name="reset_password_token">
       <Position>7</Position>
       <DataType>varchar|0s</DataType>
       <StateNumber>36415</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="85" parent="68" name="reset_password_sent_at">
+    <column id="123" parent="74" name="reset_password_sent_at">
       <Position>8</Position>
       <DataType>timestamp|0s</DataType>
       <StateNumber>36415</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="86" parent="68" name="remember_created_at">
+    <column id="124" parent="74" name="remember_created_at">
       <Position>9</Position>
       <DataType>timestamp|0s</DataType>
       <StateNumber>36415</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="87" parent="68" name="created_at">
+    <column id="125" parent="74" name="created_at">
       <Position>10</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>36415</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="88" parent="68" name="updated_at">
+    <column id="126" parent="74" name="updated_at">
       <Position>11</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>36415</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="89" parent="68" name="users_pkey">
+    <index id="127" parent="74" name="users_pkey">
       <ObjectId>30205</ObjectId>
       <StateNumber>36415</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="90" parent="68" name="index_users_on_email">
+    <index id="128" parent="74" name="index_users_on_email">
       <ObjectId>30207</ObjectId>
       <StateNumber>36415</StateNumber>
       <ColNames>email</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="91" parent="68" name="index_users_on_reset_password_token">
+    <index id="129" parent="74" name="index_users_on_reset_password_token">
       <ObjectId>30208</ObjectId>
       <StateNumber>36415</StateNumber>
       <ColNames>reset_password_token</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="92" parent="68" name="users_pkey">
+    <key id="130" parent="74" name="users_pkey">
       <ObjectId>30206</ObjectId>
       <StateNumber>36415</StateNumber>
       <ColNames>id</ColNames>

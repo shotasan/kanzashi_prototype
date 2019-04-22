@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1949b6f-d069-4b9a-a0af-b057dc18c481" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/tastes/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ced4132-67d0-4d18-9034-d6fbdd9a5e7c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8ced4132-67d0-4d18-9034-d6fbdd9a5e7c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ced4132-67d0-4d18-9034-d6fbdd9a5e7c/storage_v2/_src_/database/kanzashi_development.UfUJ3w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8ced4132-67d0-4d18-9034-d6fbdd9a5e7c/storage_v2/_src_/database/kanzashi_development.UfUJ3w/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/beans_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/beans_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/bean.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bean.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/beans/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/beans/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/beans/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/beans/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tclone/Tclone/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tclone/Tclone/Gemfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tclone/Tclone/Gemfile.lock" beforeDir="false" />
@@ -171,8 +169,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/beans_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+                <state relative-caret-position="450">
+                  <caret line="46" column="79" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/beans/show.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -198,13 +205,22 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/beans/_form.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="283">
+                <state relative-caret-position="915">
                   <caret line="61" column="8" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/routes.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/tastes/_form.html.erb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="330">
@@ -340,13 +356,11 @@
         <option value="$PROJECT_DIR$/.rspec" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190420053521_create_beans.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/uploaders/icon_uploader.rb" />
         <option value="$PROJECT_DIR$/app/views/beans/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/beans/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/beans/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/beans/new.html.erb" />
         <option value="$PROJECT_DIR$/spec/factories/beans.rb" />
         <option value="$PROJECT_DIR$/spec/factories/users.rb" />
@@ -357,9 +371,11 @@
         <option value="$PROJECT_DIR$/app/models/taste.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tastes_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/bean.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/beans_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/beans/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tastes/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/beans/_form.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/beans_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/beans/show.html.erb" />
       </list>
     </option>
   </component>
@@ -396,7 +412,7 @@
               <item name="kanzashi" type="b2602c69:ProjectViewProjectNode" />
               <item name="kanzashi" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kanzashi" type="b2602c69:ProjectViewProjectNode" />
@@ -595,18 +611,18 @@
       <workItem from="1555822846658" duration="2114000" />
       <workItem from="1555826082948" duration="1709000" />
       <workItem from="1555861926465" duration="1791000" />
-      <workItem from="1555899050008" duration="3747000" />
+      <workItem from="1555899050008" duration="4654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41686000" />
+    <option name="totallyTimeSpent" value="42593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18911175" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18911175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -619,7 +635,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32971016" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49641833" visible="true" weight="0.28502417" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49641833" visible="true" weight="0.28502417" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.504298" side_tool="true" weight="0.3200483" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.495702" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32971016" />
@@ -627,7 +643,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Routes" order="3" weight="0.3295129" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3037249" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3030086" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16905445" />
@@ -756,24 +772,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/beans/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="44" lean-forward="true" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/beans/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -910,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/beans_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -934,17 +929,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/beans/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="61" column="8" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tastes/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/beans/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="8" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8ced4132-67d0-4d18-9034-d6fbdd9a5e7c/database/kanzashi_development/schema/public/table/tastes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/beans_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="46" column="79" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/beans/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
         </state>
       </provider>
     </entry>
