@@ -1,0 +1,31 @@
+<%= form.fields model: :taste do |t| %>
+  <div class="field">
+    <%= t.label :bitter %>
+    <%= t.number_field :bitter %>
+  </div>
+
+  <div class="field">
+    <%= t.label :acidity %>
+    <%= t.number_field :acidity %>
+  </div>
+
+  <div class="field">
+    <%= t.label :rich %>
+    <%= t.number_field :rich %>
+  </div>
+
+  <div class="field">
+    <%= t.label :sweet %>
+    <%= t.number_field :sweet %>
+  </div>
+
+  <div class="field">
+    <%= t.label :aroma %>
+    <%= t.number_field :aroma %>
+  </div>
+
+  <div class="field">
+    <%= t.label :impression %>
+    <%= t.text_area :impression %>
+  </div>
+<% end %>

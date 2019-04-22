@@ -7,6 +7,7 @@ class BeansController < ApplicationController
 
   def new
     @bean = Bean.new
+    @bean.build_taste
   end
 
   def create
