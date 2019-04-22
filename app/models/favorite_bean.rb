@@ -1,0 +1,2 @@
+class FavoriteBean < ApplicationRecord
+end
