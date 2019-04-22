@@ -1,5 +1,5 @@
 <div class="bean-text">
-  <p><strong>タイトル</strong>：<%= bean.name %></p>
+  <p><strong>タイトル</strong>：<%= link_to "#{bean.name}", bean_path(bean) %></p>
   <p><strong>画像</strong>：<%= image_tag bean.icon.url %></p>
   <p><strong>国</strong>：<%= bean.country %></p>
   <p><strong>煎り方</strong>：<%= bean.roasted %></p>

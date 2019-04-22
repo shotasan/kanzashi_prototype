@@ -4,3 +4,8 @@
 <p><%= image_tag @user.icon.url %></p>
 <p>メールアドレス : <%= @user.email %></p>
 <p>プロフィール : <%= @user.profile %></p>
+
+<h2>お気に入り一覧</h2>
+<% @favorites.each do |favorite| %>
+  <%= render "beans/show", bean: favorite %>
+<% end %>
