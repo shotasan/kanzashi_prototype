@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_22_062110) do
+ActiveRecord::Schema.define(version: 2019_04_22_103605) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,21 @@ ActiveRecord::Schema.define(version: 2019_04_22_062110) do
     t.datetime "updated_at", null: false
     t.index ["bean_id"], name: "index_favorite_beans_on_bean_id"
     t.index ["user_id"], name: "index_favorite_beans_on_user_id"
+  end
+
+  create_table "my_blends", force: :cascade do |t|
+    t.string "name", default: "", null: false
+    t.integer "choice1", null: false
+    t.integer "choice2", null: false
+    t.integer "choice3"
+    t.integer "amount1", null: false
+    t.integer "amount2", null: false
+    t.integer "amount3"
+    t.text "description", default: "", null: false
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_my_blends_on_user_id"
   end
 
   create_table "tastes", force: :cascade do |t|
@@ -73,4 +88,5 @@ ActiveRecord::Schema.define(version: 2019_04_22_062110) do
   add_foreign_key "beans", "users"
   add_foreign_key "favorite_beans", "beans"
   add_foreign_key "favorite_beans", "users"
+  add_foreign_key "my_blends", "users"
 end

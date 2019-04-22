@@ -1,0 +1,2 @@
+class MyBlend < ApplicationRecord
+end
