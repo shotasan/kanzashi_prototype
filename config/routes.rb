@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   resources :users, only: %i[show]
   resources :beans
   resources :favorite_beans, only: %i[index create destroy]
+  resources :my_blends
 end

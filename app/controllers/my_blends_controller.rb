@@ -1,0 +1,26 @@
+class MyBlendsController < ApplicationController
+  def index
+    @blends = MyBlend.all
+  end
+
+  def index
+  end
+
+  def new
+  end
+
+  def create
+  end
+
+  def show
+  end
+
+  def edit
+  end
+
+  def update
+  end
+
+  def destroy
+  end
+end
