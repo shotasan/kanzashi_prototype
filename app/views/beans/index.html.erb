@@ -1,29 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Beans#index</h1>
-<h1>Blogs</h1>
 
 <%= link_to '新規登録', new_bean_path %>
 
-<table>
-  <thead>
-  <tr>
-    <th>naem</th>
-    <th>description</th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @beans.each do |bean| %>
-    <tr>
-      <td><%= bean.name %></td>
-      <td><%= bean.description %></td>
-      <td><%= link_to 'Show', bean %></td>
-      <td><%= link_to 'Edit', edit_bean_path(bean) %></td>
-      <td><%= link_to 'Destroy', bean, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
+<%= render "layouts/index", beans: @beans %>
 <p>Find me in app/views/beans/index.html.erb</p>
