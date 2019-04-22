@@ -12,6 +12,7 @@ class BeansController < ApplicationController
 
   def create
     @bean = current_user.beans.build(bean_params)
+    binding.pry
     if @bean.save
       redirect_to beans_path, notice: "#{@bean.name}の登録に成功しました。"
     else
@@ -43,7 +44,7 @@ class BeansController < ApplicationController
   end
 
   def bean_params
-    params.require(:bean).permit(:name, :country, :plantation, :roasted, :grind, :icon, :store, :price, :purchase_date, :description,
+    params.require(:bean).permit(:name, :country, :plantation, :roasted, :grind, :icon, :store, :price, :purchase_date, :description, :user_id,
                                  taste_attributes: [:bitter, :acidity, :rich, :sweet, :aroma, :impression])
   end
 end
