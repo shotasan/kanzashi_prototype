@@ -1,4 +1,6 @@
 class MyBlendsController < ApplicationController
+  before_action :set_blend, only: %i[show edit update destory]
+
   def index
     @blends = MyBlend.all
   end
@@ -20,16 +22,24 @@ class MyBlendsController < ApplicationController
   def show
   end
 
-  def edit
-  end
+  def edit ;end
 
   def update
+    if @blend.update(blend_params)
+      redirect_to my_blend_path(@blend), notice: "#{@blend.name}の編集に成功しました。"
+    else
+      render :edit
+    end
   end
 
   def destroy
   end
 
   private
+
+  def set_blend
+    @blend = MyBlend.find(params[:id])
+  end
 
   def blend_params
     params.require(:my_blend).permit(:name, :choice1, :choice2, :choice3, :amount1, :amount2, :amount3, :description,
