@@ -1,0 +1,59 @@
+<%= form_with(model: blend, local: true) do |form| %>
+  <% if blend.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize blend.errors.count, "error" %> prohibited this blend from being saved:</h2>
+
+      <ul>
+        <% blend.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :choice1 %>
+    <%= form.collection_select :choice1, current_user.beans, :id, :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount1 %>
+    <%= form.number_field :amount1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :choice2 %>
+    <%= form.collection_select :choice2, current_user.beans, :id, :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount2 %>
+    <%= form.number_field :amount2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :choice3 %>
+    <%= form.collection_select :choice3, current_user.beans, :id, :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount3 %>
+    <%= form.number_field :amount3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <%= render "tastes/form", form: form %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
