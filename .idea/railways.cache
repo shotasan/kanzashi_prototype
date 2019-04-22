@@ -1,5 +1,7 @@
                    Prefix Verb   URI Pattern                                                                              Controller#Action
-                     user GET    /users/:id(.:format)                                                                     users#show
+     favorite_beans_index GET    /favorite_beans/index(.:format)                                                          favorite_beans#index
+    favorite_beans_create GET    /favorite_beans/create(.:format)                                                         favorite_beans#create
+   favorite_beans_destroy GET    /favorite_beans/destroy(.:format)                                                        favorite_beans#destroy
          new_user_session GET    /users/sign_in(.:format)                                                                 devise/sessions#new
              user_session POST   /users/sign_in(.:format)                                                                 devise/sessions#create
      destroy_user_session DELETE /users/sign_out(.:format)                                                                devise/sessions#destroy
@@ -8,13 +10,25 @@
             user_password PATCH  /users/password(.:format)                                                                devise/passwords#update
                           PUT    /users/password(.:format)                                                                devise/passwords#update
                           POST   /users/password(.:format)                                                                devise/passwords#create
- cancel_user_registration GET    /users/cancel(.:format)                                                                  users/registrations#cancel
-    new_user_registration GET    /users/sign_up(.:format)                                                                 users/registrations#new
-   edit_user_registration GET    /users/edit(.:format)                                                                    users/registrations#edit
-        user_registration PATCH  /users(.:format)                                                                         users/registrations#update
-                          PUT    /users(.:format)                                                                         users/registrations#update
-                          DELETE /users(.:format)                                                                         users/registrations#destroy
-                          POST   /users(.:format)                                                                         users/registrations#create
+ cancel_user_registration GET    /users/cancel(.:format)                                                                  devise/registrations#cancel
+    new_user_registration GET    /users/sign_up(.:format)                                                                 devise/registrations#new
+   edit_user_registration GET    /users/edit(.:format)                                                                    devise/registrations#edit
+        user_registration PATCH  /users(.:format)                                                                         devise/registrations#update
+                          PUT    /users(.:format)                                                                         devise/registrations#update
+                          DELETE /users(.:format)                                                                         devise/registrations#destroy
+                          POST   /users(.:format)                                                                         devise/registrations#create
+                     user GET    /users/:id(.:format)                                                                     users#show
+                    beans GET    /beans(.:format)                                                                         beans#index
+                          POST   /beans(.:format)                                                                         beans#create
+                 new_bean GET    /beans/new(.:format)                                                                     beans#new
+                edit_bean GET    /beans/:id/edit(.:format)                                                                beans#edit
+                     bean GET    /beans/:id(.:format)                                                                     beans#show
+                          PATCH  /beans/:id(.:format)                                                                     beans#update
+                          PUT    /beans/:id(.:format)                                                                     beans#update
+                          DELETE /beans/:id(.:format)                                                                     beans#destroy
+           favorite_beans GET    /favorite_beans(.:format)                                                                favorite_beans#index
+                          POST   /favorite_beans(.:format)                                                                favorite_beans#create
+            favorite_bean DELETE /favorite_beans/:id(.:format)                                                            favorite_beans#destroy
        rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
 rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
        rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show

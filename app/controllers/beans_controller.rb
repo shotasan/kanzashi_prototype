@@ -12,7 +12,6 @@ class BeansController < ApplicationController
 
   def create
     @bean = current_user.beans.build(bean_params)
-    binding.pry
     if @bean.save
       redirect_to beans_path, notice: "#{@bean.name}の登録に成功しました。"
     else
@@ -22,7 +21,10 @@ class BeansController < ApplicationController
 
   def edit ;end
 
-  def show ;end
+  def show
+    @favorites = current_user.favorite_beans.find_by(bean_id: @bean)
+    binding
+  end
 
   def update
     if @bean.update(bean_params)
