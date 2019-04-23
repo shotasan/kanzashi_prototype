@@ -3,10 +3,5 @@ class Taste < ApplicationRecord
 
   validates :impression, presence: true, length: { maximum: 1000 }
   validates :bitter, :acidity, :rich, :sweet, :aroma,
-             presence:  true,
-             numericality: {
-                 only_integer: true,
-                 greater_than_or_equal_to: 1,
-                 less_than_or_equal_to: 5
-             }
+             presence:  true, inclusion: { in: [1, 2, 3, 4, 5]}
 end
