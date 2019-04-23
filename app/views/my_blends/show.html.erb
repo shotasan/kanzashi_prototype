@@ -1,2 +1,28 @@
-<h1>MyBlends#show</h1>
-<p>Find me in app/views/my_blends/show.html.erb</p>
+<h1>Blend#show</h1>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <div class="user-text">
+    <p><strong>投稿者</strong>：<%= @blend.user.name %></p>
+    <p><strong>画像</strong>：<%= image_tag @blend.user.icon.url %></p>
+  </div>
+
+  <%= render "showblend", bean: @blend %>
+
+  <div class="taste-text">
+    <p><strong>感想</strong>：<%= @blend.taste.impression %></p>
+    <p><strong>苦味</strong>：<%= @blend.taste.bitter %></p>
+    <p><strong>酸味</strong>：<%= @blend.taste.acidity %></p>
+    <p><strong>コク</strong>：<%= @blend.taste.rich %></p>
+    <p><strong>甘み</strong>：<%= @blend.taste.sweet %></p>
+    <p><strong>香り</strong>：<%= @blend.taste.aroma %></p>
+  </div>
+
+  <%# if @favorites.present? %>
+    <%#= link_to 'お気に入り解除する', favorite_blend_path(id: @favorites), method: :delete, class: 'btn btn-danger' %>
+  <%# else %>
+    <%#= link_to 'お気に入りする', favorite_blends_path(blend_id: @blend), method: :post, class: 'btn btn-primary' %>
+  <%# end %>
+
+  <%= link_to '編集', edit_my_blend_path(@blend) %>
+</div>

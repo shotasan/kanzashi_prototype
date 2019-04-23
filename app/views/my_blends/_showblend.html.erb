@@ -1,0 +1,12 @@
+<!--選択した豆の名称はbeanとblendを関連付けして表示できるか？-->
+<!--メソッドをヘルパーにするか-->
+<div class="bean-text">
+  <p><strong>タイトル</strong>：<%= link_to "#{bean.name}", my_blend_path(bean) %></p>
+  <p><strong>選択１</strong>：<%= link_to "#{Bean.find(bean.choice1).name}", bean_path(bean.choice1) %></p>
+  <p><strong>量</strong>：<%= bean.amount1 %>g</p>
+  <p><strong>選択２</strong>：<%= link_to "#{Bean.find(bean.choice2).name}", bean_path(bean.choice2) %></p>
+  <p><strong>量</strong>：<%= bean.amount2 %>g</p>
+  <p><strong>選択３</strong>：<%= link_to "#{Bean.find(bean.choice3).name}", bean_path(bean.choice3) %></p>
+  <p><strong>量</strong>：<%= bean.amount3 %>g</p>
+  <p><strong>説明</strong>：<%= bean.description %></p>
+</div>

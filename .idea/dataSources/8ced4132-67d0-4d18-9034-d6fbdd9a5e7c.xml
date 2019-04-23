@@ -101,11 +101,11 @@
       <IntrospectionStateNumber>39607</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
-      <Relations>sequence|table|30191|30193|1
+      <Relations>sequence|table|30611|30613|1
+sequence|table|30191|30193|1
 sequence|table|30312|30314|1
 sequence|table|30464|30466|1
 sequence|table|30572|30574|1
-sequence|table|30611|30613|1
 </Relations>
     </database>
     <database id="21" parent="1" name="kanzashi_test">
