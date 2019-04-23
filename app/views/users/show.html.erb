@@ -7,10 +7,19 @@
 
 <h2>自分の記録</h2>
 <% @user.beans.each do |bean| %>
-  <%= render "beans/show", bean: bean %>
+  <%= render "beans/showbean", coffee: bean %>
+  <%= link_to '詳細', bean_path(bean) %>
 <% end %>
 
 <h2>お気に入り一覧</h2>
-<% @favorites.each do |favorite| %>
-  <%= render "beans/show", bean: favorite %>
+<% @bean_favorites.each do |favorite| %>
+  <h3>ストレート</h3>
+  <%= render "beans/showbean", coffee: favorite %>
+  <%= link_to '詳細', bean_path(favorite) %>
+<% end %>
+
+<% @blend_favorites.each do |favorite| %>
+  <h3>ブレンド</h3>
+  <%= render "my_blends/showblend", coffee: favorite %>
+  <%= link_to '詳細', my_blend_path(favorite) %>
 <% end %>

@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
-    @favorites = current_user.fav_beans
+    @bean_favorites = current_user.fav_beans
+    @blend_favorites = current_user.fav_blends
   end
 end

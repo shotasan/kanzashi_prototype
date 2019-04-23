@@ -24,9 +24,6 @@
                           PATCH  /beans/:id(.:format)                                                                     beans#update
                           PUT    /beans/:id(.:format)                                                                     beans#update
                           DELETE /beans/:id(.:format)                                                                     beans#destroy
-           favorite_beans GET    /favorite_beans(.:format)                                                                favorite_beans#index
-                          POST   /favorite_beans(.:format)                                                                favorite_beans#create
-            favorite_bean DELETE /favorite_beans/:id(.:format)                                                            favorite_beans#destroy
                 my_blends GET    /my_blends(.:format)                                                                     my_blends#index
                           POST   /my_blends(.:format)                                                                     my_blends#create
              new_my_blend GET    /my_blends/new(.:format)                                                                 my_blends#new
@@ -35,6 +32,12 @@
                           PATCH  /my_blends/:id(.:format)                                                                 my_blends#update
                           PUT    /my_blends/:id(.:format)                                                                 my_blends#update
                           DELETE /my_blends/:id(.:format)                                                                 my_blends#destroy
+           favorite_beans GET    /favorite_beans(.:format)                                                                favorite_beans#index
+                          POST   /favorite_beans(.:format)                                                                favorite_beans#create
+            favorite_bean DELETE /favorite_beans/:id(.:format)                                                            favorite_beans#destroy
+          favorite_blends GET    /favorite_blends(.:format)                                                               favorite_blends#index
+                          POST   /favorite_blends(.:format)                                                               favorite_blends#create
+           favorite_blend DELETE /favorite_blends/:id(.:format)                                                           favorite_blends#destroy
        rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
 rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
        rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show

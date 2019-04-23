@@ -21,7 +21,9 @@ class MyBlendsController < ApplicationController
 
   def edit ;end
 
-  def show ;end
+  def show
+    @favorites = current_user.favorite_blends.find_by(my_blend_id: @blend)
+  end
 
   def update
     if @blend.update(blend_params)
