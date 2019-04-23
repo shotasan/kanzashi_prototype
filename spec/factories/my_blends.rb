@@ -8,5 +8,6 @@ FactoryBot.define do
     amount2 { 1 }
     amount3 { 1 }
     description { "MyText" }
+    user
   end
 end

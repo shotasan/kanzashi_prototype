@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :amount1 %>
-    <%= form.number_field :amount1 %>
+    <%= form.number_field :amount1, in: 0..100 %>
   </div>
 
   <div class="field">
@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :amount2 %>
-    <%= form.number_field :amount2 %>
+    <%= form.number_field :amount2, in: 0..100 %>
   </div>
 
   <div class="field">
@@ -43,7 +43,7 @@
 
   <div class="field">
     <%= form.label :amount3 %>
-    <%= form.number_field :amount3 %>
+    <%= form.number_field :amount3, in: 0..100 %>
   </div>
 
   <div class="field">
