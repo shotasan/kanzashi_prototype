@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1949b6f-d069-4b9a-a0af-b057dc18c481" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/my_blends/_showblend.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8ced4132-67d0-4d18-9034-d6fbdd9a5e7c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8ced4132-67d0-4d18-9034-d6fbdd9a5e7c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/tastes/_showtaste.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/beans/_show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/beans/_showbean.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/beans/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/beans/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/my_blends/_showblend.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/my_blends/_showblend.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/my_blends/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/my_blends/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tclone/Tclone/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tclone/Tclone/Gemfile" beforeDir="false" />
@@ -176,25 +178,16 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/controllers/my_blends_controller.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/my_blends/show.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+                <state relative-caret-position="135">
+                  <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/beans/_show.html.erb">
+            <entry file="file://$PROJECT_DIR$/app/views/beans/_showbean.html.erb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="165">
                   <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
@@ -205,8 +198,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/my_blends/_showblend.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+                <state relative-caret-position="105">
+                  <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
                 </state>
               </provider>
             </entry>
@@ -214,8 +207,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/beans/show.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" lean-forward="true" selection-end-line="28" />
+                <state relative-caret-position="150">
+                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/tastes/_showtaste.html.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -359,6 +361,7 @@
       <find>blog</find>
       <find>binding</find>
       <find>@bean</find>
+      <find>@blend</find>
       <find>bean</find>
     </findStrings>
   </component>
@@ -400,7 +403,6 @@
         <option value="$PROJECT_DIR$/app/models/favorite_bean.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/favorite_beans_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/beans/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/beans/_show.html.erb" />
@@ -419,6 +421,9 @@
         <option value="$PROJECT_DIR$/app/views/beans/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/my_blends/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/tastes/_showtaste.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/beans/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/beans/_showbean.html.erb" />
         <option value="$PROJECT_DIR$/app/views/my_blends/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/my_blends/_showblend.html.erb" />
       </list>
@@ -670,22 +675,22 @@
       <workItem from="1555861926465" duration="1791000" />
       <workItem from="1555899050008" duration="8307000" />
       <workItem from="1555989170010" duration="377000" />
-      <workItem from="1555990144452" duration="1244000" />
+      <workItem from="1555990144452" duration="2025000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65613000" />
+    <option name="totallyTimeSpent" value="66394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12034384" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12034384" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49928367" weight="0.32971016" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49856734" weight="0.32850242" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39975846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -694,14 +699,14 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32971016" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49283668" visible="true" weight="0.27657005" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50716335" side_tool="true" visible="true" weight="0.27657005" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49212036" visible="true" weight="0.27657005" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5078797" side_tool="true" visible="true" weight="0.27657005" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.495702" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32971016" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Routes" order="3" visible="true" weight="0.2722063" />
+      <window_info anchor="right" content_ui="combo" id="Routes" order="3" visible="true" weight="0.2722063" />
       <window_info anchor="right" id="Database" order="4" weight="0.3030086" />
     </layout>
   </component>
@@ -709,13 +714,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs26/kernel.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7046">
-          <caret line="2782" column="8" selection-start-line="2782" selection-start-column="8" selection-end-line="2782" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tastes_controller.rb" />
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor" />
@@ -992,13 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/beans/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1013,7 +1004,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/beans/_show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/tastes/_showtaste.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/beans/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/beans/_showbean.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
@@ -1022,15 +1027,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/my_blends/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="135">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/my_blends/_showblend.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="105">
+          <caret line="7" column="50" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
         </state>
       </provider>
     </entry>

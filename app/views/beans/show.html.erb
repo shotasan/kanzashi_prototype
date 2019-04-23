@@ -7,16 +7,9 @@
     <p><strong>画像</strong>：<%= image_tag @bean.user.icon.url %></p>
   </div>
 
-  <%= render "show", bean: @bean %>
+  <%= render "showbean", coffee: @bean %>
 
-  <div class="taste-text">
-    <p><strong>感想</strong>：<%= @bean.taste.impression %></p>
-    <p><strong>苦味</strong>：<%= @bean.taste.bitter %></p>
-    <p><strong>酸味</strong>：<%= @bean.taste.acidity %></p>
-    <p><strong>コク</strong>：<%= @bean.taste.rich %></p>
-    <p><strong>甘み</strong>：<%= @bean.taste.sweet %></p>
-    <p><strong>香り</strong>：<%= @bean.taste.aroma %></p>
-  </div>
+  <%= render "tastes/showtaste", coffee: @bean %>
 
   <% if @favorites.present? %>
     <%= link_to 'お気に入り解除する', favorite_bean_path(id: @favorites), method: :delete, class: 'btn btn-danger' %>
