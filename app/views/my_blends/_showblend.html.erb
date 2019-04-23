@@ -6,7 +6,9 @@
   <p><strong>量</strong>：<%= coffee.amount1 %>g</p>
   <p><strong>選択２</strong>：<%= link_to "#{Bean.find(coffee.choice2).name}", bean_path(coffee.choice2) %></p>
   <p><strong>量</strong>：<%= coffee.amount2 %>g</p>
-  <p><strong>選択３</strong>：<%= link_to "#{Bean.find(coffee.choice3).name}", bean_path(coffee.choice3) %></p>
+  <% if coffee.choice3.present? %>
+    <p><strong>選択３</strong>：<%= link_to "#{Bean.find(coffee.choice3).name}", bean_path(coffee.choice3) %></p>
+  <% end %>
   <p><strong>量</strong>：<%= coffee.amount3 %>g</p>
   <p><strong>説明</strong>：<%= coffee.description %></p>
 </div>
