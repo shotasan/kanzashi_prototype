@@ -1,5 +1,5 @@
 class MyBlendsController < ApplicationController
-  before_action :set_blend, only: %i[show edit update destory]
+  before_action :set_blend, only: %i[show edit update destroy]
 
   def index
     @blends = MyBlend.all
@@ -19,10 +19,9 @@ class MyBlendsController < ApplicationController
     end
   end
 
-  def show
-  end
-
   def edit ;end
+
+  def show ;end
 
   def update
     if @blend.update(blend_params)
@@ -33,6 +32,8 @@ class MyBlendsController < ApplicationController
   end
 
   def destroy
+    @blend.destroy
+    redirect_to my_blends_path, notice: "#{@blend.name}の削除に成功しました。"
   end
 
   private
