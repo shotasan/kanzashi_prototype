@@ -10,6 +10,7 @@ class User < ApplicationRecord
   has_many :my_blends, dependent: :destroy
   has_many :favorite_blends, dependent: :destroy
   has_many :fav_blends, through: :favorite_blends, source: :my_blend
+  has_many :comment, dependent: :destroy
 
   validates :name, presence: true, length: { maximum: 30 }
   validates :email, presence: true, length: { maximum: 255 }, format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i }, uniqueness: true
