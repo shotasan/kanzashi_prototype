@@ -1,27 +1,27 @@
 <%= form.fields model: :taste do |t| %>
   <div class="field">
     <%= t.label :bitter %>
-    <%= t.number_field :bitter %>
+    <%= t.select :bitter, rank %>
   </div>
 
   <div class="field">
     <%= t.label :acidity %>
-    <%= t.number_field :acidity %>
+    <%= t.select :acidity, rank %>
   </div>
 
   <div class="field">
     <%= t.label :rich %>
-    <%= t.number_field :rich %>
+    <%= t.select :rich, rank %>
   </div>
 
   <div class="field">
     <%= t.label :sweet %>
-    <%= t.number_field :sweet %>
+    <%= t.select :sweet, rank %>
   </div>
 
   <div class="field">
     <%= t.label :aroma %>
-    <%= t.number_field :aroma %>
+    <%= t.select :aroma, rank %>
   </div>
 
   <div class="field">
