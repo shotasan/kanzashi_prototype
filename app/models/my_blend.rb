@@ -1,7 +1,7 @@
 class MyBlend < ApplicationRecord
 
   belongs_to :user
-  has_many :comment, dependent: :destroy
+  has_many :comments, dependent: :destroy
   has_one :taste, as: :tasteable, dependent: :destroy
   accepts_nested_attributes_for :taste, allow_destroy: true
 

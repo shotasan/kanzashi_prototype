@@ -24,6 +24,14 @@
                           PATCH  /beans/:id(.:format)                                                                     beans#update
                           PUT    /beans/:id(.:format)                                                                     beans#update
                           DELETE /beans/:id(.:format)                                                                     beans#destroy
+        my_blend_comments GET    /my_blends/:my_blend_id/comments(.:format)                                               comments#index
+                          POST   /my_blends/:my_blend_id/comments(.:format)                                               comments#create
+     new_my_blend_comment GET    /my_blends/:my_blend_id/comments/new(.:format)                                           comments#new
+    edit_my_blend_comment GET    /my_blends/:my_blend_id/comments/:id/edit(.:format)                                      comments#edit
+         my_blend_comment GET    /my_blends/:my_blend_id/comments/:id(.:format)                                           comments#show
+                          PATCH  /my_blends/:my_blend_id/comments/:id(.:format)                                           comments#update
+                          PUT    /my_blends/:my_blend_id/comments/:id(.:format)                                           comments#update
+                          DELETE /my_blends/:my_blend_id/comments/:id(.:format)                                           comments#destroy
                 my_blends GET    /my_blends(.:format)                                                                     my_blends#index
                           POST   /my_blends(.:format)                                                                     my_blends#create
              new_my_blend GET    /my_blends/new(.:format)                                                                 my_blends#new
