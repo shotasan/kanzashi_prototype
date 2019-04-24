@@ -15,7 +15,9 @@
     <%= render partial: 'comments/index', locals: { comments: @comments, blend: @blend } %>
   </div>
 
-  <%= render partial: 'comments/form', locals: { comment: @comment, blend: @blend } %>
+  <div id="comment_form">
+    <%= render partial: 'comments/form', locals: { comment: @comment, blend: @blend } %>
+  </div>
 
   <% if @favorites.present? %>
     <%= link_to 'お気に入り解除する', favorite_blend_path(id: @favorites), method: :delete, class: 'btn btn-danger' %>
