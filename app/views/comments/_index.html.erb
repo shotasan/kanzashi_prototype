@@ -2,7 +2,6 @@
   <% comments.each do |comment| %>
     <% if comment.id.present? %>
       <li id="<%= comment.id %>">
-        <%# binding.pry %>
         <p><%= comment.content %></p>
         <%= link_to '編集', edit_my_blend_comment_path(comment.my_blend, comment), remote: true %>
         <%= link_to '削除', my_blend_comment_path(comment.my_blend, comment), method: :delete, remote: true %>
