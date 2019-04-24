@@ -3,6 +3,8 @@
     <% if comment.id.present? %>
       <li>
         <p><%= comment.content %></p>
+        <%# binding.pry %>
+        <%= link_to '削除', my_blend_comment_path(comment.my_blend, comment), method: :delete, remote: true %>
       </li>
     <% end %>
   <% end %>
