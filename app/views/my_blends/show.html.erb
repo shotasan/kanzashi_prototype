@@ -19,6 +19,8 @@
     <%= render partial: 'comments/form', locals: { comment: @comment, blend: @blend } %>
   </div>
 
+  <%= render "tastes/taste_chart", coffee: @blend %>
+
   <% if @favorites.present? %>
     <%= link_to 'お気に入り解除する', favorite_blend_path(id: @favorites), method: :delete, class: 'btn btn-danger' %>
   <% else %>
