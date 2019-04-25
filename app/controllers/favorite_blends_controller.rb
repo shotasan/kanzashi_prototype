@@ -9,7 +9,7 @@ class FavoriteBlendsController < ApplicationController
   end
 
   def destroy
-    favorite = current_user.favorite_blends.find_by(id: params[:id]).destroy
-    redirect_to my_blend_path(favorite), notice: "お気に入りを解除しました。"
+    favorite = current_user.favorite_blends.find(params[:id]).destroy
+    redirect_to my_blend_path(favorite.my_blend_id), notice: "お気に入りを解除しました。"
   end
 end
