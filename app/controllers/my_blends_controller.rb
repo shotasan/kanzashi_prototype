@@ -23,7 +23,7 @@ class MyBlendsController < ApplicationController
 
   def show
     @favorites = current_user.favorite_blends.find_by(my_blend_id: @blend)
-    @comments = @blend.comments.order(:created_at)
+    @comments = @blend.comments
     @comment = @blend.comments.build
   end
 

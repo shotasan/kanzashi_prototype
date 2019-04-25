@@ -1,5 +1,5 @@
 <ul>
-  <% comments.each do |comment| %>
+  <% comments.order(:created_at).each do |comment| %>
     <% if comment.id.present? %>
       <li id="<%= comment.id %>">
         <p><%= comment.content %></p>
