@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  before_action :set_comment, only: %i[edit update destroy]
+
   def create
     # HACK:paramsでmy_blend_idが２回送られている
     @comment = current_user.comments.build(comment_params)
@@ -12,14 +14,12 @@ class CommentsController < ApplicationController
   end
 
   def edit
-    @comment = Comment.find(params[:id])
     respond_to do |format|
       format.js { render :edit }
     end
   end
 
   def update
-    @comment = Comment.find(params[:id])
     @comment.update(comment_params)
     respond_to do |format|
       format.js { render :index }
@@ -27,7 +27,6 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    @comment = Comment.find(params[:id])
     @comment.destroy
     respond_to do |format|
       format.js { render :index }
@@ -35,6 +34,10 @@ class CommentsController < ApplicationController
   end
 
   private
+
+  def set_comment
+    @comment = Comment.find(params[:id])
+  end
 
   def comment_params
     params.require(:comment).permit(:user_id, :my_blend_id, :content)
