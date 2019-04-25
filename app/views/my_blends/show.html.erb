@@ -19,6 +19,7 @@
     <%= render partial: 'comments/form', locals: { comment: @comment, blend: @blend } %>
   </div>
 
+<!--  HACK:チャートの表示。RailsからJSにデータを渡す方法がわからないためERBでパーシャル-->
   <%= render "tastes/taste_chart", coffee: @blend %>
 
   <% if @favorites.present? %>
