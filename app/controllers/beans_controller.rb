@@ -3,7 +3,7 @@ class BeansController < ApplicationController
 
   def index
     @q = Bean.ransack(params[:q])
-    @beans = @q.result(distinct: true).page(params[:page])
+    @beans = @q.result(distinct: true).page(params[:page]).includes(:user)
   end
 
   def new

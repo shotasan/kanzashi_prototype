@@ -1,11 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Beans#index</h1>
+<h2>ストレート</h2>
 
-<%= link_to '新規登録', new_bean_path %>
+<%= link_to '新規登録', new_bean_path, class: "btn btn-success" %>
 
 <%= render "layouts/search", q: @q %>
 
 <%= render "layouts/index", beans: @beans %>
-
-<p>Find me in app/views/beans/index.html.erb</p>
