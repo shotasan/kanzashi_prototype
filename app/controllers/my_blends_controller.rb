@@ -3,6 +3,8 @@ class MyBlendsController < ApplicationController
 
   def index
     @blends = MyBlend.all
+    @q = MyBlend.ransack(params[:q])
+    @blends = @q.result(distinct: true)
   end
 
   def new

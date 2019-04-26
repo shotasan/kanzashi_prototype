@@ -3,6 +3,8 @@ class BeansController < ApplicationController
 
   def index
     @beans = Bean.all
+    @q = Bean.ransack(params[:q])
+    @beans = @q.result(distinct: true)
   end
 
   def new
