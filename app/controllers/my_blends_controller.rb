@@ -2,9 +2,8 @@ class MyBlendsController < ApplicationController
   before_action :set_blend, only: %i[show edit update destroy]
 
   def index
-    @blends = MyBlend.all
     @q = MyBlend.ransack(params[:q])
-    @blends = @q.result(distinct: true)
+    @blends = @q.result(distinct: true).page(params[:page])
   end
 
   def new
