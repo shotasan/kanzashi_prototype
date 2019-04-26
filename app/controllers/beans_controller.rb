@@ -2,9 +2,8 @@ class BeansController < ApplicationController
   before_action :set_bean, only: %i[show edit update destroy]
 
   def index
-    @beans = Bean.all
     @q = Bean.ransack(params[:q])
-    @beans = @q.result(distinct: true)
+    @beans = @q.result(distinct: true).page(params[:page])
   end
 
   def new
