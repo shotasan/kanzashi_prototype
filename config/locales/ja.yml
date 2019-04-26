@@ -7,6 +7,29 @@ ja:
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
+    models:
+      bean: ストレートコーヒー
+      taste: 味
+    attributes:
+      bean:
+        name: 名称
+        country: 生産国
+        plantation: 農園
+        roasted: 焙煎
+        grind: 挽き方
+        store: 購入店
+        price: 値段
+        purchase_date: 購入日
+        icon: 画像
+        description: 詳細
+      taste:
+        bitter: 苦味
+        acidity: 酸味
+        rich: コク
+        sweet: 甘み
+        aroma: 香り
+        impression: 総評
+
   date:
     abbr_day_names:
       - 日
