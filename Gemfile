@@ -81,3 +81,5 @@ gem 'mini_magick'
 gem 'chart-js-rails'
 
 gem 'ransack'
+
+gem 'kaminari'
