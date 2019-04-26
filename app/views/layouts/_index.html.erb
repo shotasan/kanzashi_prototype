@@ -1,46 +1,21 @@
-<!--<table>-->
-  <!--  <thead>-->
-  <!--  <tr>-->
-  <!--    <th>name</th>-->
-  <!--    <th>description</th>-->
-  <!--    <th colspan="3"></th>-->
-  <!--  </tr>-->
-  <!--  </thead>-->
-
-  <!--  HACK:beansをcoffeesに修正する-->
-  <!--  <tbody>-->
-  <%# beans&.each do |bean| %>
-  <!--    <tr>-->
-  <!--      <td><%#= bean.user.name %></td>-->
-  <!--      <td><%#= image_tag bean.user.icon.url if bean_class?(bean) %></td>-->
-  <!--      <td><%#= bean.name %></td>-->
-  <!--      <td><%#= link_to 'Show', bean %></td>-->
-  <!--      BeanかMyBlendかでURLを分岐-->
-  <!--      <td><%#= link_to 'Edit', bean_class?(bean) ? edit_bean_path(bean) : edit_my_blend_path(bean) %></td>-->
-  <!--      <td><%#= link_to 'Destroy', bean, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
-  <!--    </tr>-->
-  <%# end %>
-  <!--  </tbody>-->
-  <!--</table>-->
-
-<%#= paginate beans %>
-<%#= page_entries_info beans %>
-
-  <% beans&.each do |bean| %>
-    <div class="card">
-      <td><%= bean.user.name %></td>
-      <% if bean_class?(bean) %>
-        <%= image_tag bean.user.icon.url, class: "card-img-top" %>
-      <% end %>
-      <div class="card-body">
-      <td><%= bean.name %></td>
-      <td><%= link_to 'Show', bean %></td>
-      <!--      BeanかMyBlendかでURLを分岐-->
-      <td><%= link_to 'Edit', bean_class?(bean) ? edit_bean_path(bean) : edit_my_blend_path(bean) %></td>
-      <td><%= link_to 'Destroy', bean, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<div class="row mb-2">
+<% beans&.each do |bean| %>
+  <div class="col-md-12">
+    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+      <div class="card-body d-flex flex-column align-items-start">
+        <%= image_tag bean.user.icon.url, class: "user_image" %>
+        <span><%= link_to "#{ bean.user.name }", bean.user, class: "d-inline-block mb-2 text-primary"%></span>
+        <h3 class="mb-0">
+          名称: <%= link_to "#{ bean.name }", bean, class: "text-dark" %>
+        </h3>
+        <div class="mb-1 text-muted"><%= bean.created_at %></div>
+        <p class="card-text mb-auto"><%= render "tastes/showtaste", coffee: bean %></p>
       </div>
+      <%= image_tag bean.user.icon.url, class: "coffee_image" %>
     </div>
-  <% end %>
+  </div>
+<% end %>
+</div>
 
 <%= paginate beans %>
 <%= page_entries_info beans %>
