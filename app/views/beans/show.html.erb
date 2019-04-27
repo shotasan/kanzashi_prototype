@@ -19,5 +19,5 @@
     <%= link_to 'お気に入りする', favorite_beans_path(bean_id: @bean), method: :post, class: 'btn btn-primary' %>
   <% end %>
 
-  <%= link_to '編集', edit_bean_path(@bean) %>
+  <%= link_to '編集', edit_bean_path(@bean), class: "btn btn-success" %>
 </div>
