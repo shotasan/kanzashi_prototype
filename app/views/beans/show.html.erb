@@ -1,17 +1,17 @@
-<h1>Beans#show</h1>
+<h1><%= "#{@bean.name}の詳細" %></h1>
 <div class="container">
   <p id="notice"><%= notice %></p>
 
-  <div class="user-text">
-    <p><strong>投稿者</strong>：<%= @bean.user.name %></p>
-    <p><strong>画像</strong>：<%= image_tag @bean.user.icon.url %></p>
-  </div>
-
   <%= render "showbean", coffee: @bean %>
 
-  <%= render "tastes/showtaste", coffee: @bean %>
-
-  <%= render "tastes/taste_chart", coffee: @bean %>
+  <div class="row">
+    <div class="col-6">
+      <%= render "tastes/showtaste", coffee: @bean %>
+    </div>
+    <div class="col-6">
+      <%= render "tastes/taste_chart", coffee: @bean %>
+    </div>
+  </div>
 
   <% if @favorites.present? %>
     <%= link_to 'お気に入り解除する', favorite_bean_path(id: @favorites), method: :delete, class: 'btn btn-danger' %>
