@@ -9,6 +9,7 @@ ja:
           has_many: "%{record}が存在しているので削除できません"
     models:
       bean: ストレートコーヒー
+      my_blend: ブレンドコーヒー
       taste: 味
     attributes:
       bean:
@@ -22,6 +23,8 @@ ja:
         purchase_date: 購入日
         icon: 画像
         description: 詳細
+      my_blend:
+        name: 名称
       taste:
         bitter: 苦味
         acidity: 酸味
