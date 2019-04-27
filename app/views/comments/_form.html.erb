@@ -1,3 +1,5 @@
+<h4>コメントする</h4>
+
 <%= form_with(model: [blend, comment]) do |form| %>
   <% if comment.errors.any? %>
     <div id="error_explanation">
@@ -11,7 +13,6 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :content %>
     <%= form.text_area :content %>
   </div>
 
@@ -19,6 +20,6 @@
   <%= form.hidden_field :my_blend_id %>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit('投稿する', class: "btn btn-primary") %>
   </div>
 <% end %>

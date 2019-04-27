@@ -11,6 +11,7 @@ ja:
       bean: ストレートコーヒー
       my_blend: ブレンドコーヒー
       taste: 味
+      comment: コメント
     attributes:
       bean:
         name: 名称
@@ -39,6 +40,8 @@ ja:
         sweet: 甘み
         aroma: 香り
         impression: 総評
+      comment:
+        content
 
   date:
     abbr_day_names:
