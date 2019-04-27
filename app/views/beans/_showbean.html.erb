@@ -1,11 +1,14 @@
-<div class="bean-text">
-  <p><strong>タイトル</strong>：<%= coffee.name %></p>
-  <p><strong>画像</strong>：<%= image_tag coffee.icon.url %></p>
-  <p><strong>国</strong>：<%= coffee.country %></p>
-  <p><strong>煎り方</strong>：<%= coffee.roasted %></p>
-  <p><strong>挽き方</strong>：<%= coffee.grind %></p>
-  <p><strong>購入店</strong>：<%= coffee.store %></p>
-  <p><strong>値段</strong>：<%= coffee.price %></p>
-  <p><strong>購入日</strong>：<%= coffee.purchase_date %></p>
-  <p><strong>説明</strong>：<%= coffee.description %></p>
+<div class="bean-text row">
+  <div class="col-6">
+    <p><%= image_tag coffee.icon.url %></p>
+  </div>
+  <div class="col-6">
+    <p><strong>国</strong>：<%= coffee.country %></p>
+    <p><strong>煎り方</strong>：<%= coffee.roasted %></p>
+    <p><strong>挽き方</strong>：<%= coffee.grind %></p>
+    <p><strong>購入店</strong>：<%= coffee.store %></p>
+    <p><strong>値段</strong>：<%= coffee.price %></p>
+    <p><strong>購入日</strong>：<%= coffee.purchase_date %></p>
+    <p><strong>説明</strong>：<%= coffee.description %></p>
+  </div>
 </div>
