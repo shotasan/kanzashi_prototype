@@ -3,7 +3,7 @@ class MyBlendsController < ApplicationController
 
   def index
     @q = MyBlend.ransack(params[:q])
-    @blends = @q.result(distinct: true).page(params[:page])
+    @blends = @q.result(distinct: true).page(params[:page]).includes(:user, :taste)
   end
 
   def new
