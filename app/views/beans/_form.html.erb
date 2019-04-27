@@ -47,7 +47,7 @@
 
       <div class="field">
         <%= form.label :price %>
-        <%= form.number_field :price %>
+        <%= form.number_field :price, in: 0..100_000 %>
       </div>
 
       <div class="field">

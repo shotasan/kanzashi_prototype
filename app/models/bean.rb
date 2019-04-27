@@ -10,6 +10,7 @@ class Bean < ApplicationRecord
   validates :roasted, length: { maximum: 30 }
   validates :grind, length: { maximum: 30 }
   validates :store, length: { maximum: 30 }
+  validates :price, numericality: { only_integer: true, greater_than: 0, less_than_or_equal_to: 100_000 }
   validates :description, length: { maximum: 1000 }
 
   mount_uploader :icon, IconUploader
