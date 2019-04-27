@@ -25,6 +25,13 @@ ja:
         description: 詳細
       my_blend:
         name: 名称
+        choice1: 豆１
+        choice2: 豆２
+        choice3: 豆３
+        amount1: 量
+        amount2: 量
+        amount3: 量
+        description: 詳細
       taste:
         bitter: 苦味
         acidity: 酸味
