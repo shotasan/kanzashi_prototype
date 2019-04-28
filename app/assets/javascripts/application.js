@@ -17,5 +17,5 @@
 //= require Chart.min
 //= require rails-ujs
 //= require turbolinks
-//= require node_modules/jquery/dist/jquery.js
+//= require jquery/dist/jquery.js
 //= require_tree .
