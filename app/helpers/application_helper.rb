@@ -6,4 +6,8 @@ module ApplicationHelper
   def bean_class?(target)
     target.class == Bean
   end
+
+  def post_user?(post)
+    current_user == post.user
+  end
 end

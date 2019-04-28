@@ -1,5 +1,5 @@
 class BeansController < ApplicationController
-  before_action :set_bean, only: %i[show edit update destroy]
+  before_action :set_bean, only: %i[edit update destroy]
 
   def index
     @q = Bean.ransack(params[:q])
@@ -34,6 +34,7 @@ class BeansController < ApplicationController
   def edit ;end
 
   def show
+    @bean = Bean.find(params[:id])
     @favorites = current_user.favorite_beans.find_by(bean_id: @bean)
   end
 
@@ -53,7 +54,7 @@ class BeansController < ApplicationController
   private
 
   def set_bean
-    @bean = Bean.find(params[:id])
+    @bean = current_user.beans.find(params[:id])
   end
 
   def bean_params
