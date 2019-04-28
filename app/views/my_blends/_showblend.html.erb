@@ -1,12 +1,11 @@
-<!--HACK:選択した豆の名称はcoffeeとblendを関連付けして表示できるか？-->
-<!--HACK:メソッドをヘルパーにするか-->
 <div class="taste-text">
-  <p><strong>タイトル</strong>：<%= coffee.name %></p>
+  <p><strong>投稿者</strong>：<%= link_to coffee.user.name, user_path(coffee.user) %></p>
+  <p><strong>名称</strong>：<%= link_to coffee.name, my_blend_path(coffee) %></p>
   <p><strong>選択１</strong>：<%= link_to "#{Bean.find(coffee.choice1).name}", bean_path(coffee.choice1) %></p>
   <p><strong>量</strong>：<%= coffee.amount1 %>g</p>
   <p><strong>選択２</strong>：<%= link_to "#{Bean.find(coffee.choice2).name}", bean_path(coffee.choice2) %></p>
   <p><strong>量</strong>：<%= coffee.amount2 %>g</p>
-<!--  choice3の入力は任意のため-->
+  <!--  choice3の入力は任意のため-->
   <% if coffee.choice3.present? %>
     <p><strong>選択３</strong>：<%= link_to "#{Bean.find(coffee.choice3).name}", bean_path(coffee.choice3) %></p>
     <p><strong>量</strong>：<%= coffee.amount3 %>g</p>

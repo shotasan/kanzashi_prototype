@@ -61,6 +61,6 @@ class MyBlendsController < ApplicationController
 
   def blend_params
     params.require(:my_blend).permit(:name, :choice1, :choice2, :choice3, :amount1, :amount2, :amount3, :description,
-                                    taste_attributes: [:bitter, :acidity, :rich, :sweet, :aroma, :impression])
+                                     taste_attributes: [:bitter, :acidity, :rich, :sweet, :aroma, :impression])
   end
 end
