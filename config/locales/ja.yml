@@ -7,6 +7,51 @@ ja:
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
+    models:
+      bean: ストレートコーヒー
+      my_blend: ブレンドコーヒー
+      taste: 味
+      comment: コメント
+      user: ユーザー
+    attributes:
+      bean:
+        name: 名称
+        country: 生産国
+        plantation: 農園
+        roasted: 焙煎
+        grind: 挽き方
+        store: 購入店
+        price: 値段
+        purchase_date: 購入日
+        icon: 画像
+        description: 詳細
+      my_blend:
+        name: 名称
+        choice1: 豆１
+        choice2: 豆２
+        choice3: 豆３
+        amount1: 量
+        amount2: 量
+        amount3: 量
+        description: 詳細
+      taste:
+        bitter: 苦味
+        acidity: 酸味
+        rich: コク
+        sweet: 甘み
+        aroma: 香り
+        impression: 総評
+      comment:
+        content: コメント
+      user:
+        name: ユーザー名
+        icon: ユーザー画像
+        email: メールアドレス
+        profile: プロフィール
+        password: パスワード
+        password_confirmation: パスワード確認
+        current_password: 現在のパスワード
+
   date:
     abbr_day_names:
       - 日

@@ -83,3 +83,7 @@ gem 'chart-js-rails'
 gem 'ransack'
 
 gem 'kaminari'
+
+gem 'bootstrap','~> 4.3.0'
+
+gem 'faker'

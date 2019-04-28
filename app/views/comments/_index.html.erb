@@ -1,10 +1,15 @@
+<h4>コメント一覧</h4>
+
 <ul>
   <% comments.order(:created_at).each do |comment| %>
     <% if comment.id.present? %>
       <li id="<%= comment.id %>">
         <p><%= comment.content %></p>
-        <%= link_to '編集', edit_my_blend_comment_path(comment.my_blend, comment), remote: true %>
-        <%= link_to '削除', my_blend_comment_path(comment.my_blend, comment), method: :delete, remote: true %>
+        <p>投稿者: <%= comment.user.name %></p>
+        <% if post_user?(comment) %>
+          <%= link_to '編集', edit_my_blend_comment_path(comment.my_blend, comment), remote: true, class: "btn btn-success" %>
+          <%= link_to '削除', my_blend_comment_path(comment.my_blend, comment), method: :delete, remote: true, class: "btn btn-danger" %>
+        <% end %>
       </li>
     <% end %>
   <% end %>
