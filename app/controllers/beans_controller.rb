@@ -13,11 +13,22 @@ class BeansController < ApplicationController
 
   def create
     @bean = current_user.beans.build(bean_params)
+
+    if params[:back].present?
+      render :new
+      return
+    end
+
     if @bean.save
       redirect_to beans_path, notice: "#{@bean.name}の登録に成功しました。"
     else
       render :new
     end
+  end
+
+  def confirm_new
+    @bean = current_user.beans.build(bean_params)
+    render :new unless @bean.valid?
   end
 
   def edit ;end

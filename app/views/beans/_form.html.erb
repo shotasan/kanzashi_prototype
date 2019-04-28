@@ -1,8 +1,6 @@
-<%= form_with(model: bean, local: true) do |form| %>
+<%= form_with(model: bean, local: true, url: choose_new_or_edit) do |form| %>
   <% if bean.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize bean.errors.count, "error" %> prohibited this bean from being saved:</h2>
-
+    <div id="error_explanation" class="alert alert-warning" role="alert">
       <ul>
         <% bean.errors.full_messages.each do |message| %>
           <li><%= message %></li>
@@ -65,6 +63,7 @@
         <%= form.text_area :description %>
       </div>
     </div>
+
     <div class="col-6">
       <%= render "tastes/form", form: form %>
     </div>

@@ -1,0 +1,80 @@
+<%= form_with(model: @bean, local: true) do |form| %>
+  <h3>以下の内容で登録しますか？</h3>
+
+  <div class="row">
+    <div class="col-6">
+
+      <div class="field">
+        <%= form.label :name %>
+        <%= form.hidden_field :name %>
+        <%= @bean.name %>
+      </div>
+
+      <div class="field">
+        <%= form.label :country %>
+        <%= form.hidden_field :country %>
+        <%= @bean.country %>
+      </div>
+
+      <div class="field">
+        <%= form.label :plantation %>
+        <%= form.hidden_field :plantation %>
+        <%= @bean.plantation %>
+      </div>
+
+      <div class="field">
+        <%= form.label :roasted %>
+        <%= form.hidden_field :roasted %>
+        <%= @bean.roasted %>
+      </div>
+
+      <div class="field">
+        <%= form.label :grind %>
+        <%= form.hidden_field :grind %>
+        <%= @bean.grind %>
+      </div>
+
+      <div class="field">
+        <%= form.label :store %>
+        <%= form.hidden_field :store %>
+        <%= @bean.store %>
+      </div>
+
+      <div class="field">
+        <%= form.label :price %>
+        <%= form.hidden_field :price %>
+        <%= @bean.price %>
+      </div>
+
+      <div class="field">
+        <%= form.label :purchase_date %>
+        <%= form.hidden_field :purchase_date %>
+        <%= @bean.purchase_date %>
+      </div>
+
+      <div class="field">
+        <%= form.label :icon %>
+        <%= form.hidden_field :icon %>
+        <%= @bean.icon %>
+      </div>
+
+      <div class="field">
+        <%= form.label :description %>
+        <%= form.hidden_field :description %>
+        <%= @bean.description %>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <%= render "tastes/confirm_new_taste", form: form %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit name: "back", class: "btn btn-danger" %>
+  </div>
+<% end %>
