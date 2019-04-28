@@ -8,7 +8,7 @@
           <h3 class="mb-0">
             名称: <%= link_to "#{ bean.name }", bean %>
           </h3>
-          <div class="mb-1 text-muted"><%= bean.created_at %></div>
+          <div class="mb-1 text-muted"><%= bean.created_at.strftime("%Y年%-m月%-d日 %-H時%-M分") %></div>
           <p class="card-text mb-auto"><%= render "tastes/showtaste", coffee: bean %></p>
         </div>
         <%= image_tag bean.user.icon.url, class: "coffee_image" %>
