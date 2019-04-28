@@ -16,7 +16,6 @@
   <% user_beans.each do |bean| %>
     <div class="col-6 posts">
       <%= render "beans/showbean", coffee: bean %>
-      <%= link_to '詳細', bean_path(bean), class: "btn btn-success"%>
     </div>
     <div class="col-6">
       <%= render "tastes/showtaste", coffee: bean %>
@@ -30,7 +29,6 @@
   <div class="row fav-index">
     <div class="col-6 posts">
       <%= render "beans/showbean", coffee: favorite %>
-      <%= link_to '詳細', bean_path(favorite),  class: "btn btn-success" %>
     </div>
     <div class="col-6">
       <%= render "tastes/showtaste", coffee: favorite %>
@@ -42,7 +40,6 @@
   <div class="row fav-index">
     <div class="col-6 posts">
       <%= render "my_blends/showblend", coffee: favorite %>
-      <%= link_to '詳細', my_blend_path(favorite), class: "btn btn-success" %>
     </div>
     <div class="col-6">
       <%= render "tastes/showtaste", coffee: favorite %>

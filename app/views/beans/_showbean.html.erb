@@ -1,6 +1,7 @@
 <div class="bean-text row">
   <div class="bean-show">
-    <%= coffee.name %>
+    <p>名称: <%= link_to coffee.name, bean_path(coffee) %></p>
+    <p>投稿者: <%= link_to coffee.user.name, user_path(coffee.user) %></p>
     <p><%= image_tag coffee.icon.url %></p>
   </div>
   <div>
