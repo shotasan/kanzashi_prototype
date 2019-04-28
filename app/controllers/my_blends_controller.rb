@@ -13,11 +13,22 @@ class MyBlendsController < ApplicationController
 
   def create
     @blend = current_user.my_blends.build(blend_params)
+
+    if params[:back].present?
+      render :new
+      return
+    end
+
     if @blend.save
       redirect_to my_blends_path, notice: "#{@blend.name}の登録に成功しました。"
     else
       render :new
     end
+  end
+
+  def confirm_new
+    @blend = current_user.my_blends.build(blend_params)
+    render :new unless @blend.valid?
   end
 
   def edit ;end

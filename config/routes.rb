@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     post :confirm, action: :confirm_new, on: :new
   end
   resources :my_blends do
+    post :confirm, action: :confirm_new, on: :new
     resources :comments
   end
   resources :favorite_beans, only: %i[index create destroy]
