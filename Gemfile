@@ -85,3 +85,5 @@ gem 'ransack'
 gem 'kaminari'
 
 gem 'bootstrap','~> 4.3.0'
+
+gem 'faker'

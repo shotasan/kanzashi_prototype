@@ -1,7 +1,8 @@
-  <p id="notice"><%= notice %></p>
-<h1 class="blend-show"><%= "#{@blend.name}の詳細" %></h1>
-<div class="container">
+<p id="notice"><%= notice %></p>
 
+<h1 class="blend-show"><%= "#{@blend.name}の詳細" %></h1>
+
+<div class="container">
   <% if @favorites.present? %>
     <%= link_to 'お気に入り解除する', favorite_blend_path(id: @favorites), method: :delete, class: 'btn btn-danger blend-btn' %>
   <% else %>
@@ -17,8 +18,7 @@
 
   <div class="row blend-user">
     <div class="col-6">
-      <p>投稿者: <%= @blend.user.name %></p>
-      <p><%= image_tag @blend.user.icon.url %></p>
+      <p><%= image_tag @blend.user.icon.url, class: "coffee_image" %></p>
       <p>自己紹介: <%= @blend.user.profile %></p>
     </div>
     <div class="col-6">
@@ -31,7 +31,7 @@
       <%= render "tastes/showtaste", coffee: @blend %>
     </div>
     <div class="col-6">
-      <!--  HACK:チャートの表示。RailsからJSにデータを渡す方法がわからないためERBでパーシャル-->
+      <!--  HACK:チャートの表示。ERBでパーシャル-->
       <%= render "tastes/taste_chart", coffee: @blend %>
     </div>
   </div>
@@ -48,5 +48,4 @@
       </div>
     </div>
   </div>
-
 </div>
