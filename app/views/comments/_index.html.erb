@@ -6,8 +6,10 @@
       <li id="<%= comment.id %>">
         <p><%= comment.content %></p>
         <p>投稿者: <%= comment.user.name %></p>
-        <%= link_to '編集', edit_my_blend_comment_path(comment.my_blend, comment), remote: true, class: "btn btn-success" %>
-        <%= link_to '削除', my_blend_comment_path(comment.my_blend, comment), method: :delete, remote: true, class: "btn btn-danger" %>
+        <% if post_user?(comment) %>
+          <%= link_to '編集', edit_my_blend_comment_path(comment.my_blend, comment), remote: true, class: "btn btn-success" %>
+          <%= link_to '削除', my_blend_comment_path(comment.my_blend, comment), method: :delete, remote: true, class: "btn btn-danger" %>
+        <% end %>
       </li>
     <% end %>
   <% end %>
