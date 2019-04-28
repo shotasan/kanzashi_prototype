@@ -8,7 +8,9 @@
     <%= link_to 'お気に入りする', favorite_blends_path(my_blend_id: @blend), method: :post, class: 'btn btn-primary blend-btn' %>
   <% end %>
 
-  <%= link_to '編集', edit_my_blend_path(@blend), class: "btn btn-success" %>
+  <% if post_user?(@blend) %>
+    <%= link_to '編集', edit_my_blend_path(@blend), class: "btn btn-success" %>
+  <% end %>
 
   <div class="row blend-user">
     <div class="col-6">
