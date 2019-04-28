@@ -10,6 +10,7 @@
 
   <% if post_user?(@blend) %>
     <%= link_to '編集', edit_my_blend_path(@blend), class: "btn btn-success" %>
+    <%= link_to '削除', my_blend_path(@blend), method: :delete, data: { confirm: "「#{@blend.name}」を削除します。よろしいですか？" }, class: 'btn btn-danger' %>
   <% end %>
 
   <div class="row blend-user">
