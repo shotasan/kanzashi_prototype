@@ -7,9 +7,8 @@ class ApplicationController < ActionController::Base
   # deviseコントローラーにストロングパラメータを追加する
   before_action :configure_permitted_parameters, if: :devise_controller?
 
-  # ログイン後、beans/indexに移動する
   def after_sign_in_path_for(resource)
-
+    '/posts'
   end
 
   protected
