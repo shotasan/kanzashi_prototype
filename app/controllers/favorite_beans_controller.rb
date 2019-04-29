@@ -1,6 +1,6 @@
 class FavoriteBeansController < ApplicationController
   def index
-    @favorites = Favorite.where(user_id: current_user.id)
+    @favorites = FavoriteBean.where(user_id: current_user.id)
   end
 
   def create

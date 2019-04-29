@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1949b6f-d069-4b9a-a0af-b057dc18c481" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/controllers/favorite_beans_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/favorite_beans_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tclone/Tclone/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tclone/Tclone/Gemfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tclone/Tclone/Gemfile.lock" beforeDir="false" />
@@ -188,13 +189,22 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/routes.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+                <state relative-caret-position="30">
+                  <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/controllers/favorite_beans_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="180">
@@ -295,7 +305,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/tastes/_showtaste.html.erb" />
         <option value="$PROJECT_DIR$/app/views/beans/_showbean.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20190423042337_change_column_my_blend_choice3_amount3.rb" />
         <option value="$PROJECT_DIR$/app/views/my_blends/_showblend.html.erb" />
@@ -344,8 +353,9 @@
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/config/initializers/locale.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/favorite_beans_controller.rb" />
       </list>
     </option>
   </component>
@@ -599,12 +609,12 @@
       <workItem from="1556243487814" duration="518000" />
       <workItem from="1556461873308" duration="2895000" />
       <workItem from="1556468196139" duration="2988000" />
-      <workItem from="1556500314764" duration="2730000" />
+      <workItem from="1556500314764" duration="3327000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126853000" />
+    <option name="totallyTimeSpent" value="127450000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -622,7 +632,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32971016" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48065904" visible="true" weight="0.27657005" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48065904" visible="true" weight="0.46376812" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.519341" side_tool="true" weight="0.27657005" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.495702" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32971016" />
@@ -744,13 +754,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/favorite_beans_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -972,17 +975,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/favorite_beans_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
