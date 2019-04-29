@@ -13,10 +13,23 @@
 
 .user-info {
   margin-bottom: 100px;
+  border: solid 10px;
+  border-color: #646769;
+  border-radius: 60px;
+  padding: 30px;
+}
+
+#user_edit {
+  display: inline-block;
+  margin-left: 450px;
 }
 
 .fav-index {
   margin-bottom: 80px;
+  background-color: beige;
+  border-radius: 30px;
+  border: solid 3px;
+  padding: 0 20px;
 }
 
 .posts {
