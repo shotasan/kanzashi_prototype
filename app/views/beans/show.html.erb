@@ -23,6 +23,5 @@
 
   <% if post_user?(@bean) %>
     <%= link_to '編集', edit_bean_path(@bean), class: "btn btn-success" %>
-    <%= link_to '削除', bean_path(@bean), method: :delete, data: { confirm: "「#{@bean.name}」を削除します。よろしいですか？" }, class: 'btn btn-danger' %>
   <% end %>
 </div>

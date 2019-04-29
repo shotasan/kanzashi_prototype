@@ -1,5 +1,5 @@
 class BeansController < ApplicationController
-  before_action :set_bean, only: %i[edit update destroy]
+  before_action :set_bean, only: %i[edit update]
 
   def index
     @q = Bean.ransack(params[:q])
@@ -44,11 +44,6 @@ class BeansController < ApplicationController
     else
       render :edit
     end
-  end
-
-  def destroy
-    @bean.destroy
-    redirect_to beans_path, notice: "#{@bean.name}の削除に成功しました。"
   end
 
   private
