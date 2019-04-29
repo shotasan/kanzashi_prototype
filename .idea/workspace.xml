@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1949b6f-d069-4b9a-a0af-b057dc18c481" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tclone/Tclone/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tclone/Tclone/Gemfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Tclone/Tclone/Gemfile.lock" beforeDir="false" />
@@ -143,7 +144,33 @@
         <item name="Rails kanzashi: development" type="feb32156:DbDataSourceImpl" />
         <item name="database" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="kanzashi_development: database" type="162271b6:PgImplModel$Database" />
+<<<<<<< HEAD
         <item name="access method" type="d4e8921:DatabaseStructure$FamilyGroup" />
+=======
+        <item name="schema" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Rails kanzashi: development" type="feb32156:DbDataSourceImpl" />
+        <item name="database" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="kanzashi_development: database" type="162271b6:PgImplModel$Database" />
+        <item name="schema" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="table" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Rails kanzashi: development" type="feb32156:DbDataSourceImpl" />
+        <item name="database" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="kanzashi_development: database" type="162271b6:PgImplModel$Database" />
+        <item name="access method" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Rails kanzashi: development" type="feb32156:DbDataSourceImpl" />
+        <item name="role" type="d4e8921:DatabaseStructure$FamilyGroup" />
+>>>>>>> Userモデルのemailにバリデーションを設定
       </path>
     </expand>
     <select />
@@ -151,11 +178,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+=======
+        <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
+>>>>>>> Userモデルのemailにバリデーションを設定
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -169,14 +201,42 @@
         <entry file="file://$PROJECT_DIR$/app/views/my_blends/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-653" />
+=======
+        <entry file="file://$PROJECT_DIR$/app/views/my_blends/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-653" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/locale.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-189" />
+>>>>>>> Userモデルのemailにバリデーションを設定
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/config/initializers/locale.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
               <caret line="1" column="27" selection-start-column="2" selection-end-line="1" selection-end-column="27" />
+=======
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+>>>>>>> Userモデルのemailにバリデーションを設定
             </state>
           </provider>
         </entry>
@@ -195,7 +255,11 @@
         <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/gems/faker-1.9.3/lib/faker.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="795">
+<<<<<<< HEAD
               <caret line="53" column="40" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+=======
+              <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+>>>>>>> Userモデルのemailにバリデーションを設定
             </state>
           </provider>
         </entry>
@@ -244,7 +308,10 @@
         <option value="$PROJECT_DIR$/db/migrate/20190423132906_create_favorite_blends.rb" />
         <option value="$PROJECT_DIR$/app/models/favorite_blend.rb" />
         <option value="$PROJECT_DIR$/app/models/bean.rb" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/models/user.rb" />
+=======
+>>>>>>> Userモデルのemailにバリデーションを設定
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
         <option value="$PROJECT_DIR$/app/views/comments/_error.html.erb" />
         <option value="$PROJECT_DIR$/app/views/comments/error.js.erb" />
@@ -286,6 +353,10 @@
         <option value="$PROJECT_DIR$/app/views/my_blends/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/my_blends/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/initializers/locale.rb" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+>>>>>>> Userモデルのemailにバリデーションを設定
       </list>
     </option>
   </component>
@@ -326,19 +397,33 @@
             <path>
               <item name="kanzashi" type="b2602c69:ProjectViewProjectNode" />
               <item name="kanzashi" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="config" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Userモデルのemailにバリデーションを設定
             </path>
             <path>
               <item name="kanzashi" type="b2602c69:ProjectViewProjectNode" />
               <item name="kanzashi" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="config" type="462c0819:PsiDirectoryNode" />
               <item name="initializers" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Userモデルのemailにバリデーションを設定
             </path>
             <path>
               <item name="kanzashi" type="b2602c69:ProjectViewProjectNode" />
               <item name="kanzashi" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="config" type="462c0819:PsiDirectoryNode" />
               <item name="locales" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Userモデルのemailにバリデーションを設定
             </path>
           </expand>
           <select />
@@ -518,12 +603,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="136082000" />
+=======
+    <option name="totallyTimeSpent" value="136099000" />
+>>>>>>> Userモデルのemailにバリデーションを設定
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="718" height="900" extended-state="0" />
     <layout>
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19555874" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3560831" />
+>>>>>>> Userモデルのemailにバリデーションを設定
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -536,7 +629,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32971016" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48065904" visible="true" weight="0.46376812" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48065904" visible="true" weight="0.23913044" />
+>>>>>>> Userモデルのemailにバリデーションを設定
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.519341" side_tool="true" weight="0.27657005" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.495702" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32971016" />
@@ -782,7 +879,15 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor" />
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+>>>>>>> Userモデルのemailにバリデーションを設定
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/my_blends/confirm_new.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
@@ -841,7 +946,11 @@
     <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.6.0/gems/faker-1.9.3/lib/faker.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
+<<<<<<< HEAD
           <caret line="53" column="40" lean-forward="true" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+=======
+          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+>>>>>>> Userモデルのemailにバリデーションを設定
         </state>
       </provider>
     </entry>
@@ -856,7 +965,11 @@
     <entry file="file://$PROJECT_DIR$/config/initializers/locale.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
+<<<<<<< HEAD
           <caret line="1" column="27" selection-start-column="2" selection-end-line="1" selection-end-column="27" />
+=======
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+>>>>>>> Userモデルのemailにバリデーションを設定
         </state>
       </provider>
     </entry>

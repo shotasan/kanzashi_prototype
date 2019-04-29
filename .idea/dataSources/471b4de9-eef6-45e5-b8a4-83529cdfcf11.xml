@@ -105,9 +105,9 @@
       <Owner>shota</Owner>
       <IntrospectionStateNumber>38960</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|30479|30481|1
+      <Relations>sequence|table|30513|30515|1
+sequence|table|30479|30481|1
 sequence|table|30500|30502|1
-sequence|table|30513|30515|1
 </Relations>
     </database>
     <database id="22" parent="1" name="keijiban_development">
