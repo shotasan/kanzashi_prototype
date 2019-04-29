@@ -2,18 +2,6 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-ul, ol {
-  color: #1e366a;
-  border-top: solid #1e366a 1px;/*上のボーダー*/
-  border-bottom: solid #1e366a 1px;/*下のボーダー*/
-  padding: 0.5em 0 0.5em 1.5em;
-}
-
-ul li, ol li {
-  line-height: 1.5;
-  padding: 0.5em 0;
-}
-
 .introduction {
   font-family: serif;
 }
@@ -25,10 +13,18 @@ ul li, ol li {
 
 .user-info {
   margin-bottom: 100px;
+  border: solid 10px;
+  border-color: #646769;
+  border-radius: 60px;
+  padding: 30px;
 }
 
 .fav-index {
   margin-bottom: 80px;
+  background-color: beige;
+  border-radius: 30px;
+  border: solid 3px;
+  padding: 0 20px;
 }
 
 .posts {

@@ -1,30 +1,13 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-4 centered">
-      <h1>こんにちは!</h1>
-      <p class="introduction">このサイトでは、自分が購入した珈琲豆の味やその他の情報を記録する事できます。
-        <br>また、好きな珈琲豆を組み合わせて自分だけのオリジナルブレンドを作るのにも役立ちます。</br>
-        他のユーザーがお気に入りしている珈琲豆の情報を見れるので、今まで飲んだことのない珈琲にチャレンジできます。
-      </p>
-      <h5>使い方</h5>
-      <ol>
-        <li>まずはストレートコーヒーを登録しましょう。</li>
-        <li>登録したストレートコーヒーを組み合わせてオリジナルのブレンドコーヒーを作りましょう</li>
-        <li>他のユーザーが飲んでいるストレートコーヒー、ブレンドコーヒーは一覧で確認できます</li>
-        <li>気になるコーヒーがあったらお気に入りしましょう。お気に入りの一覧はマイページで確認できます</li>
-      </ol>
+      <%= render "layouts/top" %>
     </div>
   </div>
 </div>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <h1 class="h3 mb-3 font-weight-normal">ログイン</h1>
-
-  <% flash.each do |key, value| %>
-    <% key = "info" if key == "notice" %>
-    <% key = "danger" if key == "alert" %>
-    <%= content_tag(:div, value, class: "alert alert-success alert-#{key}" ,role: "alert") %>
-  <% end %>
 
   <div class="field">
     <%= f.label :email %><br />

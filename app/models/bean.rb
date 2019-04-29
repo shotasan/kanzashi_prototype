@@ -12,6 +12,15 @@ class Bean < ApplicationRecord
   validates :store, length: { maximum: 30 }
   validates :price, numericality: { only_integer: true, greater_than: 0, less_than_or_equal_to: 100_000 }
   validates :description, length: { maximum: 1000 }
+  validate :future_date_prohibited
 
   mount_uploader :icon, IconUploader
+
+  private
+
+  def future_date_prohibited
+    if purchase_date.present? && purchase_date > Date.today
+      errors.add(:base, "未来の日付は入力できません")
+    end
+  end
 end

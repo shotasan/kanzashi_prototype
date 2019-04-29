@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1><%= "#{@user.name}のページ" %></h1>
 
 <div class="user-info">
@@ -8,43 +6,50 @@
   <p>メールアドレス : <%= @user.email %></p>
   <p>プロフィール : <%= @user.profile %></p>
   <% if current_user == @user %>
-    <%= link_to "ユーザー編集", edit_user_registration_path, class: "btn btn-success" %>
+    <%= link_to "ユーザー編集", edit_user_registration_path, class: "btn btn-success", id: "user_edit" %>
   <% end %>
 </div>
 
 <h2><%= "#{@user.name}" %>の記録一覧</h2>
 
-<div class="row fav-index">
-  <% user_beans(@user).each do |bean| %>
+<% user_beans(@user).each do |bean| %>
+  <div class="row fav-index">
     <div class="col-6 posts">
       <%= render "beans/showbean", coffee: bean %>
     </div>
     <div class="col-6">
       <%= render "tastes/showtaste", coffee: bean %>
     </div>
-  <% end %>
-</div>
-
-<h2>お気に入り一覧</h2>
-
-<% @bean_favorites.each do |favorite| %>
-  <div class="row fav-index">
-    <div class="col-6 posts">
-      <%= render "beans/showbean", coffee: favorite %>
-    </div>
-    <div class="col-6">
-      <%= render "tastes/showtaste", coffee: favorite %>
-    </div>
   </div>
 <% end %>
 
-<% @blend_favorites.each do |favorite| %>
-  <div class="row fav-index">
-    <div class="col-6 posts">
-      <%= render "my_blends/showblend", coffee: favorite %>
+<h2>お気に入り一覧</h2>
+<br>
+
+<% if @bean_favorites %>
+  <h3 class="bean_heading">ストレートコーヒー</h3>
+  <% @bean_favorites.each do |favorite| %>
+    <div class="row fav-index">
+      <div class="col-6 posts">
+        <%= render "beans/showbean", coffee: favorite %>
+      </div>
+      <div class="col-6">
+        <%= render "tastes/showtaste", coffee: favorite %>
+      </div>
     </div>
-    <div class="col-6">
-      <%= render "tastes/showtaste", coffee: favorite %>
+  <% end %>
+<% end %>
+
+<% if @blend_favorites %>
+  <h3 class="blend_heading">ブレンドコーヒー</h3>
+  <% @blend_favorites.each do |favorite| %>
+    <div class="row fav-index">
+      <div class="col-6 posts">
+        <%= render "my_blends/showblend", coffee: favorite %>
+      </div>
+      <div class="col-6">
+        <%= render "tastes/showtaste", coffee: favorite %>
+      </div>
     </div>
-  </div>
+  <% end %>
 <% end %>
