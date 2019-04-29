@@ -8,8 +8,6 @@
     <%= link_to 'お気に入りする', favorite_beans_path(bean_id: @bean), method: :post, class: 'btn btn-primary' %>
   <% end %>
 
-  <%= link_to '戻る', :back, class: "btn btn-danger" %>
-
   <%= render "showbean", coffee: @bean %>
 
   <div class="row">
