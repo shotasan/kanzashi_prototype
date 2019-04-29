@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_scope :user do
     root to: "devise/sessions#new"
-    get "sign_out", to: "devise/sessions#destroy"
   end
+  get "sign_out", to: "devise/sessions#destroy"
 
   devise_for :users, controllers: {
       registrations: 'users/registrations'
