@@ -2,18 +2,6 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-ul, ol {
-  color: #1e366a;
-  border-top: solid #1e366a 1px;/*上のボーダー*/
-  border-bottom: solid #1e366a 1px;/*下のボーダー*/
-  padding: 0.5em 0 0.5em 1.5em;
-}
-
-ul li, ol li {
-  line-height: 1.5;
-  padding: 0.5em 0;
-}
-
 .introduction {
   font-family: serif;
 }
