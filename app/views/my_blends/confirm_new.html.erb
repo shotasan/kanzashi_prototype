@@ -14,38 +14,40 @@
       <div class="field">
         <%= form.label :choice1 %>
         <%= form.hidden_field :choice1 %>
-        <%= @blend.choice1 %>
+        <%= current_user.beans.find(@blend.choice1).name %>
       </div>
 
       <div class="field">
         <%= form.label :amount1 %>
         <%= form.hidden_field :amount1 %>
-        <%= @blend.amount1 %>
+        <span><%= @blend.amount1 %> g</span>
       </div>
 
       <div class="field">
         <%= form.label :choice2 %>
         <%= form.hidden_field :choice2 %>
-        <%= @blend.choice2 %>
+        <%= current_user.beans.find(@blend.choice2).name %>
       </div>
 
       <div class="field">
         <%= form.label :amount2 %>
         <%= form.hidden_field :amount2 %>
-        <%= @blend.amount2 %>
+        <span><%= @blend.amount2 %> g</span>
       </div>
 
-      <div class="field">
-        <%= form.label :choice3 %>
-        <%= form.hidden_field :choice3 %>
-        <%= @blend.choice3 %>
-      </div>
+      <% if @blend.choice3.present? %>
+        <div class="field">
+          <%= form.label :choice3 %>
+          <%= form.hidden_field :choice3 %>
+          <%= current_user.beans.find(@blend.choice3).name %>
+        </div>
 
-      <div class="field">
-        <%= form.label :amount3 %>
-        <%= form.hidden_field :amount3 %>
-        <%= @blend.amount3 %>
-      </div>
+        <div class="field">
+          <%= form.label :amount3 %>
+          <%= form.hidden_field :amount3 %>
+          <span><%= @blend.amount3 %> g</span>
+        </div>
+      <% end %>
 
       <div class="field">
         <%= form.label :description %>
