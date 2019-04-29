@@ -58,7 +58,7 @@ class BeansController < ApplicationController
   end
 
   def bean_params
-    params.require(:bean).permit(:name, :country, :plantation, :roasted, :grind, :icon, :store, :price, :purchase_date, :description,
+    params.require(:bean).permit(:name, :country, :plantation, :roasted, :grind, :icon, :icon_cache, :store, :price, :purchase_date, :description,
                                  taste_attributes: [:bitter, :acidity, :rich, :sweet, :aroma, :impression])
   end
 end

@@ -54,7 +54,8 @@
 
       <div class="field">
         <%= form.label :icon %>
-        <%= form.hidden_field :icon %>
+        <%= image_tag(@bean.icon.url) if @bean.icon && @bean.icon.url %>
+        <%= form.hidden_field :icon_cache %>
         <%= @bean.icon %>
       </div>
 
