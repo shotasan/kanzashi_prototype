@@ -1,0 +1,21 @@
+<div class="row mb-2">
+  <% beans&.each do |bean| %>
+    <div class="col-md-12">
+      <div class="card flex-md-row mb-4 box-shadow h-md-250">
+        <div class="card-body d-flex flex-column align-items-start">
+          <%= image_tag bean.user.icon.url, class: "user_image" %>
+          <span><%= link_to "#{ bean.user.name }", bean.user, class: "d-inline-block mb-2 text-primary"%></span>
+          <h3 class="mb-0">
+            名称: <%= link_to "#{ bean.name }", bean %>
+          </h3>
+          <div class="mb-1 text-muted"><%= bean.created_at.strftime("%Y年%-m月%-d日 %-H時%-M分") %></div>
+          <p class="card-text mb-auto"><%= render "tastes/showtaste", coffee: bean %></p>
+        </div>
+        <%= image_tag bean.user.icon.url, class: "coffee_image" %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<%= paginate beans %>
+<%= page_entries_info beans %>

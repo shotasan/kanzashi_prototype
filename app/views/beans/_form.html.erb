@@ -1,0 +1,75 @@
+<%= form_with(model: bean, local: true, url: choose_new_or_edit) do |form| %>
+  <% if bean.errors.any? %>
+    <div id="error_explanation" class="alert alert-warning" role="alert">
+      <ul>
+        <% bean.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="col-6">
+      <h3>基本情報</h3>
+
+      <div class="field">
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+      </div>
+
+      <div class="field">
+        <%= form.label :country %>
+        <%= form.text_field :country %>
+      </div>
+
+      <div class="field">
+        <%= form.label :plantation %>
+        <%= form.text_field :plantation %>
+      </div>
+
+      <div class="field">
+        <%= form.label :roasted %>
+        <%= form.text_field :roasted %>
+      </div>
+
+      <div class="field">
+        <%= form.label :grind %>
+        <%= form.text_field :grind %>
+      </div>
+
+      <div class="field">
+        <%= form.label :store %>
+        <%= form.text_field :store %>
+      </div>
+
+      <div class="field">
+        <%= form.label :price %>
+        <%= form.number_field :price, in: 0..100_000 %>
+      </div>
+
+      <div class="field">
+        <%= form.label :purchase_date %>
+        <%= form.date_field :purchase_date, value: Date.today %>
+      </div>
+
+      <div class="field">
+        <%= form.label :icon %>
+        <%= form.file_field :icon %>
+      </div>
+
+      <div class="field">
+        <%= form.label :description %>
+        <%= form.text_area :description %>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <%= render "tastes/form", form: form %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

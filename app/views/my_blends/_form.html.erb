@@ -1,0 +1,66 @@
+<%= form_with(model: blend, local: true, url: blend_choose_new_or_edit) do |form| %>
+  <% if blend.errors.any? %>
+    <div id="error_explanation" class="alert alert-warning" role="alert">
+      <h2><%= pluralize blend.errors.count, "error" %> prohibited this blend from being saved:</h2>
+      <ul>
+        <% blend.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="col-6">
+      <h3>基本情報</h3>
+
+      <div class="field">
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+      </div>
+
+      <div class="field">
+        <%= form.label :choice1 %>
+        <%= form.collection_select :choice1, current_user.beans, :id, :name, include_blank: true %>
+      </div>
+
+      <div class="field">
+        <%= form.label :amount1 %>
+        <%= form.number_field :amount1, in: 0..100 %>
+      </div>
+
+      <div class="field">
+        <%= form.label :choice2 %>
+        <%= form.collection_select :choice2, current_user.beans, :id, :name, include_blank: true %>
+      </div>
+
+      <div class="field">
+        <%= form.label :amount2 %>
+        <%= form.number_field :amount2, in: 0..100 %>
+      </div>
+
+      <div class="field">
+        <%= form.label :choice3 %>
+        <%= form.collection_select :choice3, current_user.beans, :id, :name, include_blank: true %>
+      </div>
+
+      <div class="field">
+        <%= form.label :amount3 %>
+        <%= form.number_field :amount3, in: 0..100 %>
+      </div>
+
+      <div class="field">
+        <%= form.label :description %>
+        <%= form.text_area :description %>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <%= render "tastes/form", form: form %>
+    </div>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: "btn btn-primary" %>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<%= form.fields model: :taste do |t| %>
+  <div class="field">
+    <%= t.label :bitter %>
+    <%= t.hidden_field :bitter %>
+    <%= @blend.taste.bitter %>
+  </div>
+
+  <div class="field">
+    <%= t.label :acidity %>
+    <%= t.hidden_field :acidity %>
+    <%= @blend.taste.acidity %>
+  </div>
+
+  <div class="field">
+    <%= t.label :rich %>
+    <%= t.hidden_field :rich %>
+    <%= @blend.taste.rich %>
+  </div>
+
+  <div class="field">
+    <%= t.label :sweet %>
+    <%= t.hidden_field :sweet %>
+    <%= @blend.taste.sweet %>
+  </div>
+
+  <div class="field">
+    <%= t.label :aroma %>
+    <%= t.hidden_field :aroma %>
+    <%= @blend.taste.aroma %>
+  </div>
+
+  <div class="field">
+    <%= t.label :impression %>
+    <%= t.hidden_field :impression %>
+    <%= @blend.taste.impression %>
+  </div>
+<% end %>

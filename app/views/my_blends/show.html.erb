@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="blend-show"><%= "#{@blend.name}の詳細" %></h1>
+
+<div class="container">
+  <% if @favorites.present? %>
+    <%= link_to 'お気に入り解除する', favorite_blend_path(id: @favorites), method: :delete, class: 'btn btn-danger blend-btn' %>
+  <% else %>
+    <%= link_to 'お気に入りする', favorite_blends_path(my_blend_id: @blend), method: :post, class: 'btn btn-primary blend-btn' %>
+  <% end %>
+
+  <%= link_to '戻る', my_blends_path, class: "btn btn-danger" %>
+
+  <% if post_user?(@blend) %>
+    <%= link_to '編集', edit_my_blend_path(@blend), class: "btn btn-success" %>
+    <%= link_to '削除', my_blend_path(@blend), method: :delete, data: { confirm: "「#{@blend.name}」を削除します。よろしいですか？" }, class: 'btn btn-danger' %>
+  <% end %>
+
+  <div class="row blend-user">
+    <div class="col-6">
+      <p><%= image_tag @blend.user.icon.url, class: "coffee_image" %></p>
+      <p>自己紹介: <%= @blend.user.profile %></p>
+    </div>
+    <div class="col-6">
+      <%= render "showblend", coffee: @blend %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <%= render "tastes/showtaste", coffee: @blend %>
+    </div>
+    <div class="col-6">
+      <!--  HACK:チャートの表示。ERBでパーシャル-->
+      <%= render "tastes/taste_chart", coffee: @blend %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6">
+      <div id="comments_area">
+        <%= render partial: 'comments/index', locals: { comments: @comments, blend: @blend } %>
+      </div>
+    </div>
+    <div class="col-6">
+      <div id="comment_form">
+        <%= render partial: 'comments/form', locals: { comment: @comment, blend: @blend } %>
+      </div>
+    </div>
+  </div>
+</div>

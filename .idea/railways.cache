@@ -1,0 +1,55 @@
+                   Prefix Verb   URI Pattern                                                                              Controller#Action
+                     root GET    /                                                                                        devise/sessions#new
+         new_user_session GET    /users/sign_in(.:format)                                                                 devise/sessions#new
+             user_session POST   /users/sign_in(.:format)                                                                 devise/sessions#create
+     destroy_user_session DELETE /users/sign_out(.:format)                                                                devise/sessions#destroy
+        new_user_password GET    /users/password/new(.:format)                                                            devise/passwords#new
+       edit_user_password GET    /users/password/edit(.:format)                                                           devise/passwords#edit
+            user_password PATCH  /users/password(.:format)                                                                devise/passwords#update
+                          PUT    /users/password(.:format)                                                                devise/passwords#update
+                          POST   /users/password(.:format)                                                                devise/passwords#create
+ cancel_user_registration GET    /users/cancel(.:format)                                                                  users/registrations#cancel
+    new_user_registration GET    /users/sign_up(.:format)                                                                 users/registrations#new
+   edit_user_registration GET    /users/edit(.:format)                                                                    users/registrations#edit
+        user_registration PATCH  /users(.:format)                                                                         users/registrations#update
+                          PUT    /users(.:format)                                                                         users/registrations#update
+                          DELETE /users(.:format)                                                                         users/registrations#destroy
+                          POST   /users(.:format)                                                                         users/registrations#create
+                     user GET    /users/:id(.:format)                                                                     users#show
+         confirm_new_bean POST   /beans/new/confirm(.:format)                                                             beans#confirm_new
+                    beans GET    /beans(.:format)                                                                         beans#index
+                          POST   /beans(.:format)                                                                         beans#create
+                 new_bean GET    /beans/new(.:format)                                                                     beans#new
+                edit_bean GET    /beans/:id/edit(.:format)                                                                beans#edit
+                     bean GET    /beans/:id(.:format)                                                                     beans#show
+                          PATCH  /beans/:id(.:format)                                                                     beans#update
+                          PUT    /beans/:id(.:format)                                                                     beans#update
+                          DELETE /beans/:id(.:format)                                                                     beans#destroy
+     confirm_new_my_blend POST   /my_blends/new/confirm(.:format)                                                         my_blends#confirm_new
+        my_blend_comments GET    /my_blends/:my_blend_id/comments(.:format)                                               comments#index
+                          POST   /my_blends/:my_blend_id/comments(.:format)                                               comments#create
+     new_my_blend_comment GET    /my_blends/:my_blend_id/comments/new(.:format)                                           comments#new
+    edit_my_blend_comment GET    /my_blends/:my_blend_id/comments/:id/edit(.:format)                                      comments#edit
+         my_blend_comment GET    /my_blends/:my_blend_id/comments/:id(.:format)                                           comments#show
+                          PATCH  /my_blends/:my_blend_id/comments/:id(.:format)                                           comments#update
+                          PUT    /my_blends/:my_blend_id/comments/:id(.:format)                                           comments#update
+                          DELETE /my_blends/:my_blend_id/comments/:id(.:format)                                           comments#destroy
+                my_blends GET    /my_blends(.:format)                                                                     my_blends#index
+                          POST   /my_blends(.:format)                                                                     my_blends#create
+             new_my_blend GET    /my_blends/new(.:format)                                                                 my_blends#new
+            edit_my_blend GET    /my_blends/:id/edit(.:format)                                                            my_blends#edit
+                 my_blend GET    /my_blends/:id(.:format)                                                                 my_blends#show
+                          PATCH  /my_blends/:id(.:format)                                                                 my_blends#update
+                          PUT    /my_blends/:id(.:format)                                                                 my_blends#update
+                          DELETE /my_blends/:id(.:format)                                                                 my_blends#destroy
+           favorite_beans GET    /favorite_beans(.:format)                                                                favorite_beans#index
+                          POST   /favorite_beans(.:format)                                                                favorite_beans#create
+            favorite_bean DELETE /favorite_beans/:id(.:format)                                                            favorite_beans#destroy
+          favorite_blends GET    /favorite_blends(.:format)                                                               favorite_blends#index
+                          POST   /favorite_blends(.:format)                                                               favorite_blends#create
+           favorite_blend DELETE /favorite_blends/:id(.:format)                                                           favorite_blends#destroy
+       rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+       rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+     rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create

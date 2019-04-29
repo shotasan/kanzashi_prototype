@@ -1,0 +1,48 @@
+<h1><%= "#{@user.name}のページ" %></h1>
+
+<div class="user-info">
+  <p>名前 : <%= @user.name %></p>
+  <p><%= image_tag @user.icon.url, class: "user_image" %></p>
+  <p>メールアドレス : <%= @user.email %></p>
+  <p>プロフィール : <%= @user.profile %></p>
+  <% if current_user == @user %>
+    <%= link_to "ユーザー編集", edit_user_registration_path, class: "btn btn-success" %>
+  <% end %>
+</div>
+
+<h2>自分の記録一覧</h2>
+
+<div class="row fav-index">
+  <% user_beans.each do |bean| %>
+    <div class="col-6 posts">
+      <%= render "beans/showbean", coffee: bean %>
+    </div>
+    <div class="col-6">
+      <%= render "tastes/showtaste", coffee: bean %>
+    </div>
+  <% end %>
+</div>
+
+<h2>お気に入り一覧</h2>
+
+<% @bean_favorites.each do |favorite| %>
+  <div class="row fav-index">
+    <div class="col-6 posts">
+      <%= render "beans/showbean", coffee: favorite %>
+    </div>
+    <div class="col-6">
+      <%= render "tastes/showtaste", coffee: favorite %>
+    </div>
+  </div>
+<% end %>
+
+<% @blend_favorites.each do |favorite| %>
+  <div class="row fav-index">
+    <div class="col-6 posts">
+      <%= render "my_blends/showblend", coffee: favorite %>
+    </div>
+    <div class="col-6">
+      <%= render "tastes/showtaste", coffee: favorite %>
+    </div>
+  </div>
+<% end %>

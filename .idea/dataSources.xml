@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Rails kanzashi: test" uuid="471b4de9-eef6-45e5-b8a4-83529cdfcf11">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/kanzashi_test</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails kanzashi: development" uuid="8ced4132-67d0-4d18-9034-d6fbdd9a5e7c">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/kanzashi_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails kanzashi: production" uuid="2fda88c2-dedb-4f6a-a8b4-9f509187cacd">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/kanzashi_production</jdbc-url>
+    </data-source>
+  </component>
+</project>
