@@ -45,7 +45,7 @@
 
       <div class="field">
         <%= form.label :price %>
-        <%= form.number_field :price, in: 0..100_000 %>
+        <span><%= form.number_field :price, in: 0..100_000 %> 円/100g</span>
       </div>
 
       <div class="field">
