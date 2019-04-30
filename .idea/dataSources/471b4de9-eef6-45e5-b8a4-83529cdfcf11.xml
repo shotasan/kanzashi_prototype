@@ -95,19 +95,23 @@
       <Owner>shota</Owner>
     </database>
     <database id="20" parent="1" name="kanzashi_development">
-      <ObjectId>30155</ObjectId>
-      <StateNumber>36408</StateNumber>
+      <ObjectId>31982</ObjectId>
+      <StateNumber>42138</StateNumber>
       <Owner>shota</Owner>
     </database>
     <database id="21" parent="1" name="kanzashi_test">
-      <ObjectId>30478</ObjectId>
-      <StateNumber>38183</StateNumber>
+      <ObjectId>31983</ObjectId>
+      <StateNumber>42139</StateNumber>
       <Owner>shota</Owner>
-      <IntrospectionStateNumber>38960</IntrospectionStateNumber>
+      <IntrospectionStateNumber>43425</IntrospectionStateNumber>
       <Current>1</Current>
-      <Relations>sequence|table|30513|30515|1
-sequence|table|30479|30481|1
-sequence|table|30500|30502|1
+      <Relations>sequence|table|32144|32146|1
+sequence|table|32170|32172|1
+sequence|table|32183|32185|1
+sequence|table|32193|32195|1
+sequence|table|32203|32205|1
+sequence|table|32217|32219|1
+sequence|table|32230|32232|1
 </Relations>
     </database>
     <database id="22" parent="1" name="keijiban_development">
