@@ -1,7 +1,7 @@
 <div class="bean-text row">
   <div class="bean-show">
     <p>名称: <%= link_to coffee.name, bean_path(coffee) %></p>
-    <p>投稿者: <%= link_to coffee.user.name, user_path(coffee.user) %></p>
+    <p class="post-user">投稿者: <%= link_to coffee.user.name, user_path(coffee.user) %></p>
     <p><%= image_tag coffee.icon.url, class: "coffee_image" %></p>
   </div>
   <div>
@@ -9,7 +9,7 @@
     <p><strong>煎り方</strong>：<%= coffee.roasted %></p>
     <p><strong>挽き方</strong>：<%= coffee.grind %></p>
     <p><strong>購入店</strong>：<%= coffee.store %></p>
-    <p><strong>値段</strong>：<%= coffee.price %> 円</p>
+    <p><strong>値段</strong>：<%= coffee.price %> 円/100g</p>
     <p><strong>購入日</strong>：<%= coffee.purchase_date %></p>
     <p><strong>説明</strong>：<%= coffee.description %></p>
   </div>
