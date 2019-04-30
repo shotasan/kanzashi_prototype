@@ -5,5 +5,6 @@ FactoryBot.define do
       "test#{n}@example.com"
     end
     password { "password" }
+    icon { "no_image.png" }
   end
 end

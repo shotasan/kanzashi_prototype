@@ -32,13 +32,6 @@ ActiveRecord::Schema.define(version: 2019_04_23_150306) do
     t.index ["user_id"], name: "index_beans_on_user_id"
   end
 
-  create_table "beans_my_blends", id: false, force: :cascade do |t|
-    t.bigint "beans_id"
-    t.bigint "my_blends_id"
-    t.index ["beans_id"], name: "index_beans_my_blends_on_beans_id"
-    t.index ["my_blends_id"], name: "index_beans_my_blends_on_my_blends_id"
-  end
-
   create_table "comments", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "my_blend_id"
