@@ -59,11 +59,110 @@ RSpec.describe "ストレートコーヒー投稿機能", type: :feature do
   describe "新規登録のテスト" do
     before do
       visit new_bean_path
+      fill_in "名称", with: "Test"
+      fill_in "値段", with: 1000
+      fill_in "総評", with: "this is test"
     end
 
-    context "正常に入力した場合" do
-      fill_in "名称", with: "Test"
-      fill_in "値段",
+    context "正常に入力してした場合" do
+      it "確認画面に遷移する" do
+        click_on "登録する"
+        expect(page).to have_content "以下の内容で登録しますか？"
+      end
+
+      it "確認画面で登録するをクリックすると登録される" do
+        click_on "登録する"
+        click_on "登録する"
+        expect(page).to have_selector ".alert-success"
+      end
+    end
+
+    context "不正な値を入力していた場合" do
+      it "名称を空欄で登録するを押すとエラーメッセージが表示される" do
+        fill_in "名称", with: ""
+        click_on "登録する"
+        expect(page).to have_selector ".alert-warning"
+      end
+
+      it "値段を0円で登録するを押すとエラーメッセージが表示される" do
+        fill_in "値段", with: 0
+        click_on "登録する"
+        expect(page).to have_selector ".alert-warning"
+      end
+
+      it "総評を空欄で登録するを押すとエラーメッセージが表示される" do
+        fill_in "総評", with: ""
+        click_on "登録する"
+        expect(page).to have_selector ".alert-warning"
+      end
+
+      it "購入日に未来の日付を入力して登録するを押すとエラーメッセージが表示される" do
+        fill_in "購入日", with: Date.tomorrow
+        click_on "登録する"
+        expect(page).to have_selector ".alert-warning"
+      end
+    end
+  end
+
+  describe  "詳細画面のテスト" do
+    before do
+      visit bean_path(@bean_a)
+    end
+
+    it "お気に入りするをクリックするとお気に入り登録される" do
+      click_on "お気に入りする"
+      expect(page).to have_content "お気に入りしました"
+    end
+
+    it "お気に入り解除するをクリックするとお気に入りが解除される" do
+      click_on "お気に入りする"
+      click_on "お気に入り解除する"
+      expect(page).to have_content "お気に入りを解除しました"
+    end
+
+    it "編集ボタンをクリックすると編集画面に遷移する" do
+      click_on "編集"
+      expect(page).to have_content "編集"
+    end
+  end
+
+  describe "編集画面のテスト" do
+    before do
+      visit edit_bean_path(@bean_a)
+    end
+
+    context "正常に入力してした場合" do
+      it "登録が完了し、一覧画面に遷移する" do
+        click_on "更新する"
+        expect(page).to have_content "ストレートコーヒー"
+        expect(page).to have_selector ".alert-success"
+      end
+    end
+
+    context "不正な値を入力していた場合" do
+      it "名称を空欄で更新するを押すとエラーメッセージが表示される" do
+        fill_in "名称", with: ""
+        click_on "更新する"
+        expect(page).to have_selector ".alert-warning"
+      end
+
+      it "値段を0円で更新するを押すとエラーメッセージが表示される" do
+        fill_in "値段", with: 0
+        click_on "更新する"
+        expect(page).to have_selector ".alert-warning"
+      end
+
+      it "総評を空欄で更新するを押すとエラーメッセージが表示される" do
+        fill_in "総評", with: ""
+        click_on "更新する"
+        expect(page).to have_selector ".alert-warning"
+      end
+
+      it "購入日に未来の日付を入力して更新するを押すとエラーメッセージが表示される" do
+        fill_in "購入日", with: Date.tomorrow
+        click_on "更新する"
+        expect(page).to have_selector ".alert-warning"
+      end
     end
   end
 end

@@ -33,7 +33,7 @@
         <%= form.collection_select :choice2, current_user.beans, :id, :name, include_blank: true %>
       </div>
 
-      <div class="field">
+      <div class="field second-amount">
         <%= form.label :amount2 %>
         <span><%= form.number_field :amount2, in: 0..100 %> g</span>
       </div>
@@ -43,7 +43,7 @@
         <%= form.collection_select :choice3, current_user.beans, :id, :name, include_blank: true %>
       </div>
 
-      <div class="field">
+      <div class="field third-amount">
         <%= form.label :amount3 %>
         <span><%= form.number_field :amount3, in: 0..100 %> g</span>
       </div>
