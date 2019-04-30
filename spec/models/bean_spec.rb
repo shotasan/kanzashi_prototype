@@ -80,6 +80,11 @@ RSpec.describe Bean, type: :model do
         first_bean.description = "a" * 1001
         expect(first_bean.valid?).to be false
       end
+
+      it "purchase_dateの日付が未来日なら無効な状態であること" do
+        first_bean.purchase_date = Date.tomorrow
+        expect(first_bean.valid?).to be false
+      end
     end
   end
 end
