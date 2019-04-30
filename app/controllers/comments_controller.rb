@@ -20,9 +20,12 @@ class CommentsController < ApplicationController
   end
 
   def update
-    @comment.update(comment_params)
     respond_to do |format|
-      format.js { render :index }
+      if @comment.update(comment_params)
+        format.js { render :index }
+      else
+        format.js { render :error }
+      end
     end
   end
 

@@ -124,6 +124,10 @@ RSpec.describe "ストレートコーヒー投稿機能", type: :feature do
       click_on "編集"
       expect(page).to have_content "編集"
     end
+
+    it "詳細画面にチャートが表示されている" do
+      expect(page).to have_selector "#myChart"
+    end
   end
 
   describe "編集画面のテスト" do
