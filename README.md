@@ -71,4 +71,4 @@ https://cacoo.com/diagrams/67hqHoqehKJMqTKj/8D9A8
 * Kaminari
 * Bootstrap
 * bullet
-* factory_girl
+* factory_bot
